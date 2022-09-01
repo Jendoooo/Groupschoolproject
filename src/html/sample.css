@@ -1,0 +1,45 @@
+.container{
+    /* display: grid;
+    height: 80vh;
+    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-areas: 
+    "show show"
+    "sidebar content";
+     */
+     display: flex;
+     justify-content: space-around;
+}
+
+
+button{
+    cursor: pointer;
+}
+
+.showsidebar{
+    text-align: center;
+    background-color: yellow;
+    grid-area: show;
+    /* position: fixed;
+    top: 0;
+    right: 45%; */
+}
+
+
+.sidebar{
+    display: none;
+    grid-area: sidebar;
+    background: green;
+    transition: 5s;
+}
+
+.sidebar ul li button{
+    position: fixed;
+    top: 0;
+    right: 45%;
+}
+
+.main{
+    background: blue;
+    grid-area: content;
+}

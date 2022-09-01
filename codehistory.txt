@@ -1,0 +1,23 @@
+17th August 2022
+
+1. The merge of the about , staff and contact us has been successfully carried out . - Daniel, Atoyebi, Charles & Olajide .
+
+
+18th August 2022 
+
+Olajide :
+Addition of facicilities template using grid layout and anchor tags
+
+
+CHARLES EMMANUEL
+i made my contact page responsive to all phones
+
+Daniel Emmanuel
+1. i made my (about us) css to be responsive to all  mobile screen except iphone 12 promax which will be done on 19th August 2022.   - Emmanuel Daniel
+
+
+
+1. I made my website responsive to all phone except iphone watch 
+
+
+by- Emmanuel Atoyebi

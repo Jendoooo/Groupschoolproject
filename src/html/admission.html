@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/admission.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <section class="header">
+    <nav>
+      
+        <!-- <p>OgunmodedeCollege</p> -->
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./staff.html">MEET OUR STAFF</a></li>
+                <li><a href="./blog.html">BLOG/NEWSPAGE</a></li>
+                <li><a href="./gallery.html">GALLERY</a></li>
+                <li><a href="./contact.html">ENQUIRIES </a></li>
+            </ul>
+    
+        </div>
+        <i class="fa fa-bars" onclick = "showMenu()"></i>
+    </nav> 
+</section>
+ 
+    <div class="container">
+      <h1 class="form-title">admission form</h1>
+
+      
+      
+        <form action="#">
+          <div class="user">
+            <div class="input-box">
+            <span class="you">Academic Session</span>
+            
+            <input id="you" placeholder="Please Enter Academic Session" type="text" required>
+            </div><br>
+            <div class="input-box">
+            <label class="you">Standard:</label><br>
+            <select id="sent" required>
+              <option>SSS1</option>
+              <option>SSS2</option>
+              <option>SSS3</option>
+            </select>
+                
+             </div><br>
+             <div class="input-box">
+            <span  class="app">Applicant Name</span><br>
+            <input id="app" placeholder="Surname First" required><br>
+              </div><br>
+           
+            <div class="input-box">
+            <label class="dob">DOB</label>
+            <input id="dob" type="date" required>
+            </div><br>
+           
+            <div class="input-box" id="gender">
+              <label class="gender">GENDER:</label> &nbsp;<br>
+              <select class="i">
+                <option>Male</option>
+                <option>Female</option>
+                <option>None Of The Above</option>
+              </select>
+            </div><br>
+            <div id="prime" class="input-box">
+                <label class="you">Primary Email</label>
+                <input type="email" id="app" placeholder="@gmail.com" value="@gmail.com" required>
+            </div>
+            <div id="mom" class="input-box">
+              <label class="you">Mother's Name</label>
+              <input type="text" id="app" placeholder="Mother's Name" required>
+
+            </div>
+            <div class="input-box">
+              <label id="mom" class="you">Father's Name</label>
+              <input type="text" id="app" placeholder="Father's Name" required>
+
+            </div>
+          </div> 
+         
+            <div class="sub">
+              <button type="submit" class="submit">SUBMIT</button>
+            </div>
+         
+                
+
+    </form>
+     
+      </div>
+
+      
+  <footer>
+      <p>Follow us on <a href="facebook.com"> <i class="fa-brands fa-facebook-f"></i></a> <a href="facebook.com"> <i class="fa-brands fa-instagram"></i></a> <a href="facebook.com"> <i class="fa-brands fa-twitter"></i></a></p>
+      <p>&copy; Ogunmodede Senior College 2022</p>
+  </footer>
+
+</body>
+</html>
