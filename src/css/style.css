@@ -41,7 +41,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: whitesmoke;
-    height: 10vh;
+    height: 5vh;
     opacity: 1;
     
 }
@@ -104,7 +104,7 @@ nav {
 
 main{
 
-    height: 85vh;
+    height: 95vh;
     background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.JPG); 
     background-size: cover;
     background-position: center;
@@ -115,6 +115,9 @@ main{
 
 main .school_logo{
     height: 65%;
+    /* background-color: #222; */
+    display: flex;
+    align-items: center;
     
 }
 
@@ -129,6 +132,8 @@ main .text{
     padding: 20px;
     text-transform: uppercase;
     color: white;
+    text-align: center;
+    /* color: #8e0e1e; */
 
 }
 
@@ -158,7 +163,7 @@ main .text p{
 
 .intro .top{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
     
 }
 
@@ -167,16 +172,24 @@ main .text p{
 }
 
 .intro .top .image img{
-    width: 76%;
+    width: 500px;
     border-radius: 30px;
     padding: 20px;
+    
 }
 
 .intro .top .welcome{
 
     height: 100%;
-    /* padding: 50px; */
-    padding: 55px;
+    /* paing: 50px; */
+    /* padding: 55px; */
+    display: flex;
+    align-items: center;
+    
+}
+
+.intro .top .welcome .content{
+    text-align: center;
 }
 
 
@@ -266,6 +279,10 @@ main .text p{
     background: white;
     transform: scale(1.1);
     transition: 1.5s;
+}
+
+.explore{
+    text-align: center;
 }
 
 .triangle{
