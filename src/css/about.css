@@ -152,7 +152,7 @@ footer i{
     .test{
         box-sizing: content-box;
         display: block;
-        float: left;
+        float: right;
         max-width: 15%;
         width: 300px;
         /* background-color: yellow; */
@@ -181,10 +181,12 @@ footer i{
 
     #mobilenav .fa{
         position: fixed;
+        left: 120px;
     }
 
 
     .test nav{
+        position: fixed;
         display: none;
         height: 100vh;
         
@@ -196,6 +198,7 @@ footer i{
         opacity: 0.8;
         width: 200px;
         height: 100vh;
+        left: -50px;
        
      
     }

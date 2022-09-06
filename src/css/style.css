@@ -2,16 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
 }
 
 
+html{
+    /* font-size: 62.5%; */
+    font-family: 'Montserrat', sans-serif;
+}
+
 body{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(168, 171, 182, 0.7),rgba(4,9,30,0.7)), url(../img/index/coverimg.JPG); 
+    background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimg.JPG); 
     background-size: cover;
     background-position: center;
     position: relative;
@@ -53,7 +61,7 @@ nav {
 .nav-links ul li a {
     color: #8e0e1e;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -92,6 +100,10 @@ nav {
 
 main{
     margin-top: 1%;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #8e0e1e;
+    /* color: whitesmoke; */
 }
 
 main h1, main h2{
@@ -108,12 +120,11 @@ main h1, main h2{
 .btn-explore{
     width: 350px;
     padding: 20px;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bolder;
     border-radius: 12px;
     color: black;
     background: linear-gradient( #8e0e1e, rgb(3, 17, 22) );
-   
     border: 2px solid grey;
     cursor: pointer;
     transition: 1s;
@@ -121,10 +132,11 @@ main h1, main h2{
 }
 
 .btn-explore:hover{
-    width: 350px;
+    width: 350px;    
+    
     padding: 20px;
     margin: auto;
-    font-size: 20px;
+    font-size: 3,5rem;
     font-weight: bolder;
     border-radius: 12px;
     color: black;
@@ -196,11 +208,11 @@ main h1, main h2{
 
 
 footer{
-    background-color: linear-gradient(to right, #00093c, #2d0b00);
+    /* background-color: linear-gradient(to right, #00093c, #2d0b00); */
     width: 100%;
     position:absolute;
     bottom: 0px;
-    height: 60px;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,9 +220,10 @@ footer{
     text-align: center;
     color: black;
     line-height: 30px;
-    font-size: 15px;
+    font-size: 3em;
     font-weight: bold;
-    background-color: transparent;
+    background-color: black;
+    opacity: 0.8;
 }
 
 
