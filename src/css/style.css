@@ -190,6 +190,8 @@ main .text p{
 
 .intro .top .welcome .content{
     text-align: center;
+    width: 600px;
+    margin: auto;
 }
 
 
@@ -218,7 +220,7 @@ main .text p{
 
 .intro .bottom .box{
     max-width: 250px;
-    max-height: 75%;
+    max-height: 300px;
     border: 2px solid black;
     text-align: center;
     padding: 20px;
