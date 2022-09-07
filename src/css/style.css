@@ -23,7 +23,6 @@ html{
 }
 
 body{
-    height: 300vh;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
 
@@ -167,55 +166,64 @@ main .text p{
 
  .intro{
 
-    max-width: 100vw;
-    min-height: 100vh;
+    max-width: 100%;
     height: 100vh;
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0.5rem;
+    /* grid-template-columns: minmax(0,1fr); */
+    /* grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5rem; */ 
+    display: flex;
+    flex-direction: column;
+   
+    
+    
 
 }
 
 .intro .top{
-    display: grid;
-
-    grid-template-columns: 1.2fr 1fr;
+    display: flex;
+    flex-direction: row;
 
     
 }
 
 .intro .top .image{
+    flex-basis: 55%;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
+    float: left;
+   
   
 }
 
 .intro .top .image img{
-    float: right;
-    width: 90%;
+    float: left;
+    width: 95%;
     border-radius: 30px;
     padding: 20px;
-    float: right;
-    
+
 }
 
 .intro .top .welcome{
-  
+    float: right;
+    flex-basis: 45%;
     display: flex;
     align-items: center;
     justify-content:center;
     height: 100%;
     display: flex;
     align-items: center;
+    background: white;
+
     
 }
 
 .intro .top .welcome .content{
     text-align: center;
-    width: 600px;
+    width: 500px;
     margin: auto;
 
 }
@@ -279,6 +287,7 @@ main .text p{
    justify-content: space-evenly;
    align-items: center;
    padding: 40px;
+   max-height: 50vh;
 }
 
 .intro .bottom .box{
@@ -354,14 +363,44 @@ main .text p{
 }
 
 .explore{
+    
     text-align: center;
+    height: 50vh;
+    background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.JPG);
+    background-size: cover;
+    background-position: center;
+    transition: 5s;
+    background: yellow;
+
+    /* animation: animate alternate-reverse 30s forwards infinite running ease-in-out; */
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(../img/index/prefects.JPG);
+    }
+    20%{
+        background-image: url(../img/index/success.JPG);
+    }
+    40%{
+        background-image: url(../img/index/IMG_1086.JPG);
+    }
+    60%{
+        background-image: url(../img/index/explore_imgbg.JPG);
+    }
+    80%{
+        background-image: url(../img/index/prefects.JPG);
+    }
+    100%{
+        background-image: url(../img/index/prefects.JPG);
+    }
 }
 
 
 
 footer{
 
-   height: 23vh;
+   height: 32vh;
     /* text-align: center; */
     width: 100%;
     /* background: linear-gradient(to right, #00093c , #2d0b00); */
