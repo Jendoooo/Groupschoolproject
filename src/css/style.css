@@ -20,11 +20,13 @@
 html{
     /* font-size: 62.5%; */
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+   
 
     
     
@@ -168,11 +170,6 @@ main .text p{
 
     max-width: 100%;
     height: 100%;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    /* grid-template-columns: minmax(0,1fr); */
-    /* grid-template-rows: 1fr 1fr;
-    grid-gap: 0.5rem; */ 
     display: flex;
     flex-direction: column;
 }
@@ -180,17 +177,20 @@ main .text p{
 .intro .top{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
     
 }
 
 .intro .top .image{
-    flex-basis: 55%;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    float: left;
+    flex-basis: 55%;
+
+    
    
   
 }
@@ -209,10 +209,12 @@ main .text p{
     display: flex;
     align-items: center;
     justify-content:center;
-    height: 100%;
+    height: 600px;
     display: flex;
     align-items: center;
     background: white;
+    justify-content: center;
+
 
     
 }
@@ -284,6 +286,9 @@ main .text p{
    align-items: center;
    padding: 40px;
    max-height: 50vh;
+   animation: animate alternate-reverse 30s forwards infinite running ease-in-out;
+   background-size: cover;
+   background-position: center;
 }
 
 .intro .bottom .box{
@@ -365,39 +370,141 @@ main .text p{
     background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.JPG);
     background-size: cover;
     background-position: center;
-    transition: 5s;
-    background: yellow;
+    /* background: yellow; */
 
-    /* animation: animate alternate-reverse 30s forwards infinite running ease-in-out; */
+    animation: animate alternate-reverse 100s forwards infinite  ease-in-out;
+    position: relative;
+   
+}
+
+.explore .content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    opacity: 0.5;
+    font-size: 50px;
+    font-weight: 700;
 }
 
 @keyframes animate{
     0%{
-        background-image: url(../img/index/prefects.JPG);
+        background-image: url(../img/index/bg/coverimg\ \(1\).JPG);
+    }
+    10%{
+        background-image: url(../img/index/bg/coverimg\ \(2\).JPG);
     }
     20%{
-        background-image: url(../img/index/success.JPG);
+        background-image: url(../img/index/bg/coverimg\ \(3\).JPG);
+    }
+    30%{
+        background-image: url(../img/index/bg/coverimg\ \(4\).JPG);
     }
     40%{
-        background-image: url(../img/index/IMG_1086.JPG);
+        background-image: url(../img/index/bg/coverimg\ \(5\).JPG);
+    }
+    50%{
+        background-image: url(../img/index/bg/coverimg\ \(6\).JPG);
     }
     60%{
-        background-image: url(../img/index/explore_imgbg.JPG);
+        background-image: url(../img/index/bg/coverimg\ \(7\).JPG);
+    }
+    70%{
+        background-image: url(../img/index/bg/coverimg\ \(8\).JPG);
     }
     80%{
-        background-image: url(../img/index/prefects.JPG);
+        background-image: url(../img/index/bg/coverimg\ \(9\).JPG);
+    }
+    90%{
+        background-image: url(../img/index/bg/coverimg\ \(10\).JPG);
     }
     100%{
-        background-image: url(../img/index/prefects.JPG);
+        background-image: url(../img/index/bg/coverimg\ \(11\).JPG);
     }
+}
+
+.offer{
+    height: 100vh;
+    background-color: purple;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.offer .heading{
+    padding: 30px;
+    height: 16%;
+    background-color: #8e0e1e;
+    border: 5px solid white;
+    width: 75%;
+    margin: auto;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+}
+
+.offer .heading .text{
+    width: 75%;
+    background-color: whitesmoke;
+    margin: auto;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #8e0e1e;
+
+    
+}
+
+.offer .heading h2{
+    text-transform: uppercase;
+    line-height: 80px;
+    font-size: 2.5em;
+
+}
+
+.offer .heading p{
+    font-size: 1.5em;
+}
+
+.offer .content{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: green;
+}
+
+.offer .content:nth-child(1){
+    background-color: yellow;
+    height: 100%;
+}
+
+.offer ul{
+    height: 75%;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    background-color: yellow;
+    padding: 20px;
+}
+
+.offer ul li {
+    grid-column: 1;
+    list-style: none;
+    line-height: 50px;
+    
 }
 
 
 
-footer{
 
-   height: 32vh;
-    /* text-align: center; */
+footer{
+  
+    height: 35vh;
+    text-align: center;
     width: 100%;
     /* background: linear-gradient(to right, #00093c , #2d0b00); */
     /* background: linear-gradient(to right, #8e0e1e,#00093c ); */
@@ -430,6 +537,7 @@ footer .row{
 footer .col{
     flex-basis: 25%;
     padding: 10px;
+    
 }
 
 footer .col:nth-child(1){
