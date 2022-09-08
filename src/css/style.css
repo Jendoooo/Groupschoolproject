@@ -485,17 +485,24 @@ main .text p{
 }
 
 .offer ul{
+    display: grid;
     height: 75%;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    background-color: yellow;
+    background-color: white;
     padding: 20px;
+    width: 100%;
 }
 
 .offer ul li {
     grid-column: 1;
     list-style: none;
+    width: 100%;
     line-height: 50px;
-    
+   
+}
+
+.offer ul li:hover {
+    background-color: #8e0e1e;
 }
 
 
