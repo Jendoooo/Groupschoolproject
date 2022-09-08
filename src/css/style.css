@@ -372,7 +372,7 @@ main .text p{
     transition: 5s;
     background: yellow;
 
-    /* animation: animate alternate-reverse 30s forwards infinite running ease-in-out; */
+    /* animation: animatxe alternate-reverse 30s forwards infinite running ease-in-out; */
 }
 
 @keyframes animate{
