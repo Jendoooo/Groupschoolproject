@@ -1,5 +1,9 @@
+:root{
+    --school-color:#8e0e1e;
+}
+
 footer{
-  
+    
     height: 34vh;
     text-align: center;
     width: 100%;
@@ -21,7 +25,17 @@ footer{
     background: whitesmoke;
     background: white;
     /* outline: 5px solid var(--school-color); */
+    /* clip-path: inset(0px round 250px 0px 0px); */
     
+}
+
+#contactfooter{
+    height: 50vh;
+    border: none;
+}
+
+#stafffooter{
+    z-index: 1;
 }
 
 footer .row{

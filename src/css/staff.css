@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: sans-serif;
     font-family: 'Montserrat', sans-serif;
     
@@ -12,131 +12,88 @@
 
 body{
     /* background:linear-gradient(green,lightgray) ; */
+    display: flex;
+    flex-direction: column;
 }
+
+
+
+
+.intro {
+    background-color: yellow;
+    height: 30vh;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+
 .container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 0.4fr 1;
-    grid-gap: 20px;
-    
-    
-    grid-template-areas:
-    "nav nav nav nav"
-    "talk talk talk talk"
-    "aside1 aside2 content content"
-    "aside3 aside4 content content"
-    "footer footer footer footer"
-    ;
+   height: 70vh;
+   display: grid;
+   grid-template-columns: 0.5fr 1.5fr;
+   grid-template-rows: 1fr;
+   padding: 30px;
+   background: green;
+  
+
+   
+} 
+
+.container .oga_officers{
+    position: relative;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.talk{
-    grid-area: talk;
-    
-    font-family: cursive;
-    font-size: xx-large;
-    color: white;
-    background-color:tomato;
-    font-weight: lighter;
-
-
+.container .oga_officers img{
+    width: 150px;
+    border-radius: 50%;
+   
 }
-
-.aside1{
-    grid-area: aside1;
-    
-    
-}
-.aside2{
-    grid-area: aside2;
-    background-color:purple;
-}
-.aside3{
-    grid-area: aside3;
-    background-color:orange;
-}
-.aside4{
-    grid-area: aside4;
-    background-color: black;
-}
-.content{
-    grid-area: content;
-    background-color: wheat;
-}
-footer{
-    grid-area: footer;
-    background-color: rebeccapurple;
-}
-img{
-    height: 100%;
-    width: 100%;
-}
-.content{
-    overflow-x:scroll ;
-    
-}
-.content img{
-    display: inline-block;
+.container .oga_officers .label{
+    position: absolute;
+    width: 150px;
     height: 200px;
-    width: 200px;
+    border: 2px solid red;
+    top:90px;
+    z-index: 0;
+}
+
+
+.container .staff_members{
+    height: 50%;
+    background-color: blue;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3,1fr); 
+    overflow: auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); */
+    
+
+    
     
 }
 
-nav {
-    grid-area: nav;
-    background-color: white;
- }
- 
- 
- .header i{
-     display: none;
- }
- 
- 
- .nav-links{
-     flex: 1;
-     text-align: center;
- }
- 
- .nav-links ul li{
-     list-style: none;
-     display: inline-block;
-     padding: 8px 12px;
-     position: relative;
- }
- 
- .nav-links ul li a {
-     color: #8e0e1e;
-     text-decoration: none;
-     font-size: 20px;
-     text-transform: uppercase;
-     font-weight: bolder;
- }
- 
- 
- 
- .nav-links ul li::after{
-     content: " ";
-     width: 0%;
-     border: 2px solid blue;
-     display: none;
-     margin: auto;
-     height: 2px;
-     transition: 0.5s;
-     background-color: #222;
- 
- }
- 
- .nav-links ul li:hover::after{
-     content: " ";
-     width: 100%;
-     border: 2px solid whitesmoke;
-     background-color: whitesmoke;
-     display: block;
-     margin: auto;
-     height: 2px;
-     transition: 0.5s;
- }
+.container .staff_members div{
+    /* grid-column: 4; */
+}
+
+.container .staff ,div a .img{
+    width: 50px;
+}
+
+.container img{
+    width: 100px;
+    max-height: 100px;
+    /* height: 10px; */
+}
+
+
 
  
  

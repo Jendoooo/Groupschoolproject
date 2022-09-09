@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     font-family: 'Montserrat', sans-serif;
     
 }
@@ -23,14 +23,14 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    margin-top: -6px;
+    /* margin-top: -6px; */
    
 
 
@@ -483,66 +483,7 @@ textarea{
     min-height: 150px;
 }
 
-    footer{
-        background-color: linear-gradient(to right, #00093c, #2d0b00);
-        width: 100%;
-        position:absolute;
-        bottom: 0px;
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* border: 5px solid grey; */
-        text-align: center;
-        color: #fff;
-        
-        font-size: 15px;
-        font-weight: bold;
-        background-color: transparent;
-        }
 
-
-        footer ul {
-            float: left;
-        }
-
-        footer ul li {
-            float: left;
-        }
-
-        footer ul li a {
-            color: #2d0b00;
-        }
-
-
-        footer i {
-            color: #8e0e1e;
-        }
-
-        footer p{
-            padding: 0px;
-            margin: 0px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-    }
 
 
 
@@ -730,6 +671,3 @@ textarea{
      
     
 }
-
-
-
