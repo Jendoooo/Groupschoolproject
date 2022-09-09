@@ -30,6 +30,7 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    /* height: 400vh; */
    
 
     
@@ -416,19 +417,20 @@ main .text p{
 }
 
 .offer{
-    height: 100vh;
-    background-color: purple;
+    height: 120vh;
+    /* background-color: purple; */
     text-align: center;
-    padding: 10px;
+    padding: 1px;
     display: flex;
     flex-direction: column;
+    
     
 }
 
 .offer .heading{
     padding: 30px;
-    height: 16%;
-    background-color: #8e0e1e;
+    height: 13%;
+    /* background-color: #8e0e1e; */
     border: 5px solid white;
     width: 75%;
     margin: auto;
@@ -439,11 +441,12 @@ main .text p{
 
 .offer .heading .text{
     width: 75%;
-    background-color: whitesmoke;
+    background-color: white;
     margin: auto;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     color: #8e0e1e;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
     
 }
@@ -460,18 +463,20 @@ main .text p{
 }
 
 .offer .content{
-    padding: 20px;
-    height: 59%;
+    padding: 80px;
+    height: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: green;
+    max-height: 600px;
+    background-color: yellow;
+    
 }
 
 
 
 .offer h2{
-    text-transform: uppercase;
+    text-transform: capitalize;
     width: fit-content;
     position: relative;
     margin: auto;
@@ -503,8 +508,8 @@ main .text p{
 
 .offer ul{
     display: grid;
-    height: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    height: 85%;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     background-color: white;
     width: 100%;
     border-top-left-radius: 30px;
@@ -516,8 +521,15 @@ main .text p{
     list-style: none;
     width: 100%;
     line-height: 50px;
+   
     
    
+}
+
+.offer ul li:first-child{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
 }
 
 .offer ul li:hover {
@@ -530,24 +542,25 @@ main .text p{
 
 .offer .admission .text h2{
     height: 30%;
-    background-color: yellow;
     text-transform: capitalize;
 }
 .offer .admission .text p{
     height: 30%;
-    background-color: yellow;
+   
     text-transform: capitalize;
 }
 
 .offer .admission .buttons{
     background-color: grey;
-    height: 50%;
+    height: 40%;
     padding: 2em;
     width: 550px;
     background-color: green;
     margin: auto;
     display: flex;
     justify-content: space-around;
+    background: #fff;
+    clip-path: inset(0px 0px 25px 0px);
 
 }
 
@@ -570,7 +583,7 @@ main .text p{
 
 footer{
   
-    height: 35vh;
+
     text-align: center;
     width: 100%;
     /* background: linear-gradient(to right, #00093c , #2d0b00); */
@@ -578,7 +591,7 @@ footer{
     /* background-color: yellow; */
     color: #fff;
     padding: 100px 0 30px;
-    border-top-left-radius: 250px; 
+    border-top-right-radius: 250px; 
     font-size: 13px;
     line-height: 20px;
     border: 2px solid;
@@ -588,6 +601,8 @@ footer{
     /* background: yellow; */
     /* border-radius: 200px; */
     background: whitesmoke;
+    background: white;
+    outline: 5px solid var(--school-color);
     
 }
 
@@ -604,6 +619,7 @@ footer .row{
 footer .col{
     flex-basis: 25%;
     padding: 10px;
+    text-align: left;
     
 }
 
@@ -613,7 +629,7 @@ footer .col:nth-child(1){
     justify-content: center;
     flex-direction: column;
     /* border: 5px solid red; */
-    text-align: center;
+    /* text-align: center; */
 }
 
 footer .col:nth-child(2), .col:nth-child(3){
