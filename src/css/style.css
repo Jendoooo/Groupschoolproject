@@ -244,6 +244,7 @@ main .text p{
     flex-direction: column;
     align-items:center;
     justify-content: center;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
  
   
 }
@@ -429,13 +430,15 @@ main .text p{
 
 .offer .heading{
     padding: 30px;
-    height: 13%;
+    height: 25%;
     /* background-color: #8e0e1e; */
     border: 5px solid white;
-    width: 75%;
+    width: 90%;
     margin: auto;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
+    max-height: 250px;
+    
 
 }
 
@@ -446,7 +449,7 @@ main .text p{
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     color: #8e0e1e;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 
     
 }
@@ -463,13 +466,16 @@ main .text p{
 }
 
 .offer .content{
-    padding: 80px;
-    height: 60%;
+    padding: 20px;
+    height: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    max-height: 600px;
-    background-color: yellow;
+    /* max-height: 700px; */
+    /* background-color: yellow; */
+    width: 90%;
+    overflow-y: auto;
+    margin: auto;
     
 }
 
@@ -508,13 +514,32 @@ main .text p{
 
 .offer ul{
     display: grid;
-    height: 85%;
+    height: 95%;
     grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     background-color: white;
     width: 100%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    overflow-y: auto;
+   
 }
+
+.offer ul::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  /* Track */
+  .offer ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  .offer ul::-webkit-scrollbar-thumb {
+    background: var(--school-color);
+    border-radius: 10px;
+    height: 2%;
+  }
 
 .offer ul li {
     grid-column: 1;
@@ -533,7 +558,7 @@ main .text p{
 }
 
 .offer ul li:hover {
-    background-color: var(--school-color);
+    /* background-color: var(--school-color); */
 }
 
 .offer .admission{
@@ -561,22 +586,58 @@ main .text p{
     justify-content: space-around;
     background: #fff;
     clip-path: inset(0px 0px 25px 0px);
+    overflow-y: hidden;
 
 }
 
-.offer .admission .buttons a {
+.button{
     
-    width: 150px;
+    width: 110px;
     border-radius: 10px;
     padding: 20px;
-    background-color: #8e0e1e;
+    background-color: whitesmoke;
     text-decoration: none;
-    color: white;
+    color: var(--school-color);
     text-transform: uppercase;
     cursor: pointer;
-    line-height: 50px;
+    height: 20px;
     font-size: 1.15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
