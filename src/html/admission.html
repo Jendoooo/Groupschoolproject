@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/admission.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./admission.css">
     <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +11,13 @@
     <title>Document</title>
 </head>
 <body>
-  <section class="header">
-    <nav>
-      
-        <!-- <p>OgunmodedeCollege</p> -->
-        <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./staff.html">MEET OUR STAFF</a></li>
-                <li><a href="./blog.html">BLOG/NEWSPAGE</a></li>
-                <li><a href="./gallery.html">GALLERY</a></li>
-                <li><a href="./contact.html">ENQUIRIES </a></li>
-            </ul>
-    
-        </div>
-        <i class="fa fa-bars" onclick = "showMenu()"></i>
-    </nav> 
-</section>
  
     <div class="container">
-      <h1 class="form-title">admission form</h1>
+      <h1 class="form-title"><i class="fa fa-book fa-lg fa-fw"aria-hidden="true"></i>admission form</h1>
 
       
       
-        <form action="#">
+        <form action="you.html" method="get" onsubmit="return validate ()">
           <div class="user">
             <div class="input-box">
             <span class="you">Academic Session</span>
@@ -52,13 +33,18 @@
             </select>
                 
              </div><br>
+
              <div class="input-box">
-            <span  class="app">Applicant Name</span><br>
-            <input id="app" placeholder="Surname First" required><br>
+            <span  class="app">First Name</span><br>
+            <input type="text" id="app" placeholder="please enter your address" ><br>
+              </div><br>
+             <div class="input-box">
+            <span  class="app">Last Name</span><br>
+            <input type="text" id="app" placeholder="Surname First" ><br>
               </div><br>
            
-            <div class="input-box">
-            <label class="dob">DOB</label>
+            <div class="input-box" id="dbo">
+            <label class="dob">D.O.B</label>
             <input id="dob" type="date" required>
             </div><br>
            
@@ -74,15 +60,68 @@
                 <label class="you">Primary Email</label>
                 <input type="email" id="app" placeholder="@gmail.com" value="@gmail.com" required>
             </div>
-            <div id="mom" class="input-box">
+            <div id="prime" class="input-box">
               <label class="you">Mother's Name</label>
               <input type="text" id="app" placeholder="Mother's Name" required>
 
             </div>
-            <div class="input-box">
-              <label id="mom" class="you">Father's Name</label>
+            <div id="prime" class="input-box">
+              <label class="you">Father's Name</label>
               <input type="text" id="app" placeholder="Father's Name" required>
 
+            </div>
+            <div class="input-box" id="prime">
+              <label class="you">Address</label>
+              <input type="url" id="app" placeholder="please enter your address" >
+            </div>
+            <div class="input-box">
+              <label id="idk">Department:</label><br>
+              <select class="sat">
+                <option id="again">science</option>
+                <option id="again">commercial</option>
+                <option id="again">humanities</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <label id="idk">State:</label>
+              <select  class="sat">
+                <option id="again">Abia State</option>
+                <option id="again">Adamawa State</option>
+                <option id="again">Akwa-ibom State</option>
+                <option id="again">Anambra State</option>
+                <option id="again">Bauchi</option>
+                <option id="again">Bayelsa</option>
+                <option id="again">Benue</option>
+                <option id="again">Borno</option>
+                <option id="again">Cross</option>
+                <option id="again">Delta State</option>
+                <option id="again">Ebonyi State</option>
+                <option id="again">Edo State</option>
+                <option id="again">Ekiti State</option>
+                <option id="again">Enugu State</option>
+                <option id="again">Gombe State</option>
+                <option id="again">Imo State</option>
+                <option id="again">Jigawa State</option>
+                <option id="again">Kaduna State</option>
+                <option id="again">Kano State</option>
+                <option id="again">Katsina State</option>
+                <option id="again">Kebbi State</option>
+                <option id="again">Kogi State</option>
+                <option id="again">Kwara State</option>
+                <option id="again">Lagos State</option>
+                <option id="again">Nasarawa State</option>
+                <option id="again">Niger State</option>
+                <option id="again">Ogun State</option>
+                <option id="again">Ondo State</option>
+                <option id="again">Osun State</option>
+                <option id="again">Oyo State</option>
+                <option id="again">Plateau State</option>
+                <option id="again">Rivers State</option>
+                <option id="again">Sokoto State</option>
+                <option id="again">	Taraba State</option>
+                <option id="again">Yobe State</option>
+                <option id="again">Zamfara State</option>
+              </select>
             </div>
           </div> 
          
@@ -90,17 +129,33 @@
               <button type="submit" class="submit">SUBMIT</button>
             </div>
          
-                
+              
+              
+           
+            
 
     </form>
      
       </div>
+      <script type="text/javascript">
+        function validate()
+        {
+          var isApplicantNameValid = true;
 
-      
-  <footer>
-      <p>Follow us on <a href="facebook.com"> <i class="fa-brands fa-facebook-f"></i></a> <a href="facebook.com"> <i class="fa-brands fa-instagram"></i></a> <a href="facebook.com"> <i class="fa-brands fa-twitter"></i></a></p>
-      <p>&copy; Ogunmodede Senior College 2022</p>
-  </footer>
+          if(document.getElementById("app").value == "");
+          {
+            isApplicantNameValid=false;
+            document.getElementsByClassName("app").innerHTML = "please enter your name";
+            document.getElementsByClassName("app").style.color = "red";
+          }
+          else
+          {
+            isApplicantNameValid= true;
+            document.getElementsByClassName("app").innerHTML = "valid";
+            document.getElementsByClassName("app").style.color = "red";
 
+          }
+        }
+      </script>
 </body>
 </html>
