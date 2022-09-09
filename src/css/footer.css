@@ -15,7 +15,7 @@ footer{
     border-top-right-radius: 250px; 
     font-size: 13px;
     line-height: 20px;
-    border: 2px solid var(--school-color);
+    outline: 2px solid var(--school-color);
     /* outline: #8e0e1e; */
     border-bottom: none;
     /* background-color: #8e0e1e; */

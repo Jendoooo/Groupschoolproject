@@ -29,7 +29,7 @@ body{
 }
 
 .container{
-   height: 90vh;
+   height: 80vh;
    /* max-height: 900px; */
    display: grid;
    padding: 30px;
@@ -129,35 +129,71 @@ body{
     color: #444;
 }
 
+.restofstaff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.restofstaff .talk{
+    /* padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin:auto;
+    line-height: 50px; */
+    background-color: yellow;
+    height: 25vh;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+
+.restofstaff .talk h1{
+    text-decoration: underline;
+}
+
 
 
 .restofstaff .staff_members{
-    height: 50%;
-    background-color: blue;
-    float: right;
+    padding: 60px 0;
+    height: 60vh;
+    background-color: whitesmoke;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(3,1fr); 
+    width: 90%;
+    grid-gap: 0.1em;
+    grid-template-columns: repeat(5, 1fr); 
     overflow: auto;
+    margin: auto
+    
+    
     /* grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); */
-    
-
-    
+  
     
 }
 
-.restofstaff .staff_members div{
-    /* grid-column: 4; */
-}
+
 
 .container .staff_members ,div a .img{
     width: 50px;
 }
 
 .staff_members img{
-    width: 100px;
-    max-height: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
     /* height: 10px; */
+}
+
+.placeholder{
+    width: 100%;
+    text-align: center;
+    height: 30vh;
+    /* border-bottom: 2px solid #8e0e1e; */
+    outline: #8e0e1e;
+    background: whitesmoke;
+    margin: auto;
+    padding: 60px 0;
 }
 
 
@@ -197,6 +233,29 @@ body{
         cursor: pointer;
         transition: 0.4s;
         box-sizing: border-box;
+    }
+
+    .restofstaff .staff_members{
+        padding: 60px 0;
+        height: 60vh;
+        background-color: whitesmoke;
+        display: grid;
+        width: 90%;
+        grid-gap: 0.1em;
+        grid-template-columns: repeat(3, 1fr); 
+        overflow: auto;
+        margin: auto
+        
+        
+        /* grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); */
+      
+        
+    }
+    .staff_members img{
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        /* height: 10px; */
     }
 }
  
