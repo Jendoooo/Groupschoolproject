@@ -811,6 +811,21 @@ footer .underline span{
 }
 
 @media (max-width :700px){
+
+
+    body{
+        font-family: 'Montserrat', sans-serif;
+        width: 100vw;
+        /* height: 400vh; */
+       
+    
+        
+        
+    }
+
+
+
+
     footer{
         bottom: unset;
     }
