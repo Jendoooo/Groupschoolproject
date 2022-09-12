@@ -828,11 +828,16 @@ footer .underline span{
         width: 100vw;
         /* height: 400vh; */
         position: relative;
+        background: white;
        
     
         
         
     }
+
+.header{
+    background: yellow;
+}
 
     
 nav {
@@ -842,8 +847,8 @@ nav {
     /* opacity: 0.8; */
     display: block;
     padding:0;
-
-    height: 7.9vh;
+    height: 100%;
+   
 
 
  
@@ -998,7 +1003,7 @@ nav .base .firstlogo img{
 }
 
 main{
-    
+    width:100vw;
     height: 50vh;
     background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.JPG); 
     /* background: white; */
@@ -1007,7 +1012,8 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
-   
+    padding: 0;
+    
 }
 
 main .school_logo{
@@ -1546,7 +1552,7 @@ main .text p{
 
 
     footer{
-        height: 120.9vh;
+        height: 100.9vh;
         bottom: unset;
     }
 
