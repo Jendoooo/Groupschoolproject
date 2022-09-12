@@ -6,17 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="src/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css">
+    <link rel="icon" type="image/x-icon" href="./src/img/index/ogunmodedelogo.png">
     <script src="./src/js/index.js" defer></script>
     <title>Ogunmodede Senior College, Epe </title>
 </head>
 <body>
     <section class="header">
         <nav>
-          
+            <div class="base">
+                <div class="icons">
+                    <i class="fa fa-bars" onclick = "showMenu()" id="menu"></i>
+                    <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()" id="cancel"></i>
+                </div>
+                <div class="firstlogo">
+                    <img src="./src/img/index/ogunmodedelogo.png" alt="School Logo">
+                </div>
+            </div>
+           
             <!-- <p>OgunmodedeCollege</p> -->
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
-                <ul>
+                
+                
+                <ul id="actualnav">
+                    
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./src/html/about.html">ABOUT</a></li>
                     <li><a href="./src/html/staff.html">MEET OUR STAFF</a></li>
@@ -26,7 +38,9 @@
                 </ul>
         
             </div>
-            <i class="fa fa-bars" onclick = "showMenu()"></i>
+           
+          
+            
         </nav> 
     </section>
 
