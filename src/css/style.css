@@ -875,7 +875,9 @@ nav .base .icons{
 }
 
 nav .base .icons .fa{
-    font-size: 20px;
+    font-size: 30px;
+    padding-top: 10px;
+    color: var(--school-color);
 
     
 }
@@ -886,7 +888,7 @@ nav .base .icons  #menu{
 
 nav .base .icons #cancel{
     display: none;
-    font-size: 25px;
+    font-size: 30px;
 
 
     /* transform: translateY(-22px); */
@@ -949,6 +951,14 @@ nav .base .firstlogo img{
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bolder;
+}
+
+.nav-links ul li:hover{
+    background-color: var(--school-color);
+}
+
+.nav-links ul li:hover a{
+    color: white;
 }
 
 
