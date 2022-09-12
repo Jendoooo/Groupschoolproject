@@ -21,7 +21,7 @@ body{
 
 .intro {
     background-color: yellow;
-    height: 30vh;
+    height: 15vh;
     text-align: center;
     width: 70%;
     margin: auto;
@@ -29,10 +29,9 @@ body{
 }
 
 .container{
-   height: 70vh;
+   height: 80vh;
+   /* max-height: 900px; */
    display: grid;
-   grid-template-columns: 0.5fr 1.5fr;
-   grid-template-rows: 1fr;
    padding: 30px;
    background: green;
   
@@ -41,112 +40,223 @@ body{
 } 
 
 .container .oga_officers{
-    position: relative;
-    background-color: pink;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5;
 }
+
+.container .header{
+    padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin:auto;
+    line-height: 50px;
+
+}
+
+
 
 .container .oga_officers img{
     width: 150px;
     border-radius: 50%;
    
 }
-.container .oga_officers .label{
-    position: absolute;
-    width: 150px;
+
+.container .sub_container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.container .sub_container .teams{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.container .sub_container .teams:hover{
+    background-color: #ddd;
+    border-radius: 12px;
+}
+
+
+.teams img{
+    width: 200px;
     height: 200px;
-    border: 2px solid red;
-    top:90px;
-    z-index: 0;
+
+}
+
+.teams .name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.teams .role{
+    font-style: italic;
+    color: #888;
+
+}
+
+.teams .about{
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+.teams .smpages{
+    margin: 14px;
+}
+
+.smpages a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: .4s;
+}
+.smpages a:hover{
+    transform: scale(1.5);
+}
+
+.smpages a i{
+    color: #444;
+}
+
+.restofstaff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.restofstaff .talk{
+    /* padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin:auto;
+    line-height: 50px; */
+    background-color: yellow;
+    height: 25vh;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+}
+
+.restofstaff .talk h1{
+    text-decoration: underline;
 }
 
 
-.container .staff_members{
-    height: 50%;
-    background-color: blue;
-    float: right;
+
+.restofstaff .staff_members{
+    padding: 60px 0;
+    height: 60vh;
+    background-color: whitesmoke;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(3,1fr); 
+    width: 90%;
+    grid-gap: 0.1em;
+    grid-template-columns: repeat(5, 1fr); 
     overflow: auto;
+    margin: auto
+    
+    
     /* grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); */
-    
-
-    
+  
     
 }
 
-.container .staff_members div{
-    /* grid-column: 4; */
-}
 
-.container .staff ,div a .img{
+
+.container .staff_members ,div a .img{
     width: 50px;
 }
 
-.container img{
-    width: 100px;
-    max-height: 100px;
+.staff_members img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
     /* height: 10px; */
 }
 
-
-
- 
- 
-@media (max-width:480px){
-    /* .container{
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
-        grid-template-areas:
-        "nav nav"
-        "talk talk"
-        "aside1 aside2"
-        "aside3 aside4"
-        "content content"
-        "content content"
-        "content content"
-        "content content"
-        "footer footer"
-        ;
-    }
-    
-    .talk{
-        font-size: smaller;
-        
-    }
-    .content{
-        overflow-x: scroll;
-    } */
-    .container{
-        height: 400vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "nav"
-        "talk"
-        "aside1"
-        "aside2"
-        "aside3"
-        "aside4"
-        "content"
-        "footer"
-        
-        ;
-    }
-    .content img{
-        display: inline;
-        width: 200px;
-        height: 200px;
-    }
-    .talk{
-        font-size: small;
-    }
-
+.placeholder{
+    width: 100%;
+    text-align: center;
+    height: 30vh;
+    /* border-bottom: 2px solid #8e0e1e; */
+    outline: #8e0e1e;
+    background: whitesmoke;
+    margin: auto;
+    padding: 60px 0;
 }
+
+
+
+
+
+@media screen and (max-width:600px){
+    .teams{
+        max-width: 100%;
+    }
+
+    .intro{
+        height:50vh ;
+    }
+
+    .container{
+        height: 200vh;
+        
+       
+    }
+    .container .sub_container{
+        max-width: 1200px;
+        margin: auto;
+        padding: 5px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        
+       
+    }
+
+    .container .sub_container .teams{
+        margin: 10px;
+        padding: 5px;
+        max-width: 100%;
+        cursor: pointer;
+        transition: 0.4s;
+        box-sizing: border-box;
+    }
+
+    .restofstaff .staff_members{
+        padding: 60px 0;
+        height: 60vh;
+        background-color: whitesmoke;
+        display: grid;
+        width: 90%;
+        grid-gap: 0.1em;
+        grid-template-columns: repeat(3, 1fr); 
+        overflow: auto;
+        margin: auto
+        
+        
+        /* grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)); */
+      
+        
+    }
+    .staff_members img{
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        /* height: 10px; */
+    }
+}
+ 
+ 
