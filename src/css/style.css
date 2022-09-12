@@ -931,7 +931,7 @@ nav .base .firstlogo img{
 .nav-links ul{
     position: fixed;
     top: 7.5vh;
-    left: -200px;
+    left: -205px;
     background: white;
     height: 90%;
     width: 50%;
@@ -1353,7 +1353,7 @@ main .text p{
 
 .offer .heading{
     padding: 5px;
-    height: 50%;
+    height: 40%;
     /* background-color: #8e0e1e; */
     border: none;
     outline: none;
@@ -1375,6 +1375,8 @@ main .text p{
     border-bottom-right-radius: 25px;
     color: #8e0e1e;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    box-shadow: none;
+    outline: 2px solid var(--school-color);
 
     
 }
@@ -1397,7 +1399,7 @@ main .text p{
 .offer .content{
    
     
-    height: 50%;
+    height: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
