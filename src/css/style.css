@@ -57,6 +57,10 @@ nav {
     
 }
 
+nav .base {
+    display:none;
+}
+
 
 .header i{
     display: none;

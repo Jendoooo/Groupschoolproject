@@ -1,241 +1,194 @@
-/* definign variables */
 *{
+    padding: 0;
     margin: 0;
-    padding: 0;
-}
-:root{
-    --main-radius:5px;
-    --main-padding:5px;
-}
-
-.container{
-    display: grid;
-    height: 150vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.2fr;
-
-/* to specifiy where each element will be in th grid */
-
-    grid-template-areas: 
-    "nav nav nav nav"
-    "sidebar main main main"
-    "sidebar content1 content2 content3"
-    "footer footer footer footer";
-
-
-    text-align: center;
-    grid-gap: 0.2rem;
-    text-transform: uppercase;
-}
-
-nav{
-    /* background-color: #a7ffeb; */
-    background-color: white;
-    grid-area: nav;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-evenly;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    /* z-index: 100; */
-}
-
-
-.header i{
-    display: none;
-}
-
-
-.nav-links{
-    flex: 1;
-    text-align: center;
-}
-
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-
-.nav-links ul li a {
-    color: #8e0e1e;
-    text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bolder;
-}
-
-
-
-.nav-links ul li::after{
-    content: " ";
-    width: 0%;
-    border: 2px solid blue;
-    display: none;
-    margin: auto;
-    height: 2px;
-    transition: 0.5s;
-    background-color: #222;
-
-}
-
-.nav-links ul li:hover::after{
-    content: " ";
-    width: 100%;
-    border: 2px solid whitesmoke;
-    background-color: whitesmoke;
-    display: block;
-    margin: auto;
-    height: 2px;
-    transition: 0.5s;
-}
-
-.nav-links i{
-    display: none;
-}
-
-#bar{
-    display: none;
-}
-
-
-
-.sidebar{
-    background: lightslategray;
-    grid-area: sidebar;
-    padding: 0;
     
 }
 
 
-.sidebar ul{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    width: 100%;
-    margin: 0;
-    height: 100%;
-}
 
-.sidebar ul li{
-  list-style: none;
-  grid-column: 1;
-  border: 5px dashed red;
-  line-height: 50px;
 
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    display: block;
+header nav{
+    height: 100px;
+    background-color: whitesmoke;
     text-align: center;
-    word-wrap: break-word;
 }
 
 
-.test{
-    font-size: 75px;
+main .image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    width: 100%;
+    animation: animate alternate-reverse 30s forwards infinite running ease-in-out; 
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    
+    
+  
+  
+}
+
+main .image .text{
+    color: white;
+   
+}
+main .image .text h1{
+    font-size: 70px;
+    text-transform: capitalize;
+}
+main .image .text p{
+    text-transform: capitalize;
+    font-size: large;
+    text-indent: 20px;
+}
+.heading{
+    height: 450px;
+    border: 5px solid red;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    width: 95%;
+    margin: auto;
+    
+}
+.heading h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: monospace;
+    margin-top: 90px;
+}
+.heading p{
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 50px;
+    margin-top: -40px;
 }
 
 
+.content .boxes{
+    background-color: grey;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 10px;
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+}
 
+.content .boxes .box{
+    height: 350px;
+    width: 290px;
+    background-color: azure;
+    text-align: center;
+    padding: 3px;
+    border: 2px solid;
+    border-radius: 25px;
+}
+.content .boxes .box:nth-child(1):hover{
+    transform: scale(1.1);
+    transition: 1s;
 
+}
 
+.content .boxes .box:nth-child(2):hover{
+    transform: scale(1.1);
+    transition: 1s;
 
+}
 
+.content .boxes .box:nth-child(3):hover{
+    transform: scale(1.1);
+    transition: 1s;
 
+}
 
+.content .boxes .box:nth-child(4):hover{
+    transform: scale(1.1);
+    transition: 1s;
 
+}
+.content .boxes .box .text{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.content .boxes .icon{
+    background-color: red;
+    height: 90px;
+    width: 90px;
+    border-radius: 50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main{
-    background-color: #84ffff;
-    grid-area: main;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
+}
+.content .boxes .box i{
+    color: white;
+}
+.content .boxes .box .img {
+    background: url(./img/index/banner.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 230px;
+    width: 95%;
+    border: 1px solid;
+    margin: auto;
+    border-radius: 25px;
+    
+    
+    
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.content1{
-    background: #6fffd2;
-    grid-area: content1;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
+@keyframes animate{
+    0%{
+        background-image: url(./img/index/coverimg.JPG);
+    }
+    10%{
+        background-image: url(./img/staff/5b7b532a-d0c7-4c9e-80d7-a1d2717904c7.jpg);
+    }
+    20%{
+        background-image: url(./img/contact/vtech.JPG);
+    }
+    30%{
+        background-image: url(./img/index/banner.PNG);
+    }
+    40%{
+        background-image: url(./img/facilities/ict/ictfrontview.JPG);
+    }
+    50%{
+        background-image: url(./img/index/success2.PNG);
+    }
+    60%{
+        background-image: url(./img/index/testlogo.jpg);
+    }
+    70%{
+        background-image: url(./img/staff/mrs_\ vitalis.jpg);
+    }
+    80%{
+        background-image: url(./img/index/IMG_1086.JPG);
+    }
+    90%{
+        background-image: url(./img/staff/mr_\ onibeju.jpg);
+    }
+    100%{
+        background-image: url(./img/facilities/ict/charlesdanielpc.JPG);
+    }
 }
 
-.content2{
-    background-color: #64ffda;
-    grid-area: content2;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-}
-
-.content3{
-    background: #73ffba;
-    grid-area: content3;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-}
 
 footer{
-    background: #1de9b6;
-    grid-area: footer;
-    border-radius: var(--main-radius);
-    padding: var(--main-padding);
-}
-
-
-@media only screen and (max-width:480px) {
-    .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
-        grid-template-areas: 
-        "nav"
-        "sidebar"
-        "main"
-        "content1"
-        "content2"
-        "content3"
-        "footer";
-    }
+    background-color: whitesmoke;
+    height: 250px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    
 }
