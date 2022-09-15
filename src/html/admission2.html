@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../css/admission.css">
+    <link rel="stylesheet" href="../css/admission2.css">
     <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -9,19 +9,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="script.js"></script>
+    <script src="../js/index.js" defer></script>
     <title>Admission</title>
 </head>
 <body>
-
   <section class="header">
     <nav>
-      
+        <div class="base">
+            <div class="icons">
+                <i class="fa fa-bars" onclick = "showMenu()" id="menu"></i>
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()" id="cancel"></i>
+            </div>
+            <div class="firstlogo">
+              <img src="../img/index/ogunmodedelogo.png" alt="School Logo">
+                
+            </div>
+        </div>
+       
         <!-- <p>OgunmodedeCollege</p> -->
         <div class="nav-links" id="navLinks">
-            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
-            <ul>
-              <ul>
+            
+            
+            <ul id="actualnav">
+                
                 <li><a href="../../index.html">HOME</a></li>
                 <li><a href="./about.html">ABOUT</a></li>
                 <li><a href="./staff.html">MEET OUR STAFF</a></li>
@@ -29,16 +39,16 @@
                 <li><a href="./gallery.html">GALLERY</a></li>
                 <li><a href="./contact.html">ENQUIRIES </a></li>
             </ul>
-            </ul>
     
         </div>
-        <i class="fa fa-bars" onclick = "showMenu()"></i>
+       
+      
+        
     </nav> 
 </section>
-
  
     <div class="container">
-      <h1 class="form-title"><i class="fa fa-book fa-lg fa-fw"aria-hidden="true"></i>admission form</h1>
+      <h1 class="form-title">admission form</h1>
 
       
       
@@ -49,7 +59,7 @@
             
             <input id="you" placeholder="Please Enter Academic Session" type="text" required>
             </div><br>
-            <div class="input-box">
+            <div class="input-box" id="select">
             <label class="you">Standard:</label><br>
             <select id="sent" required>
               <option>SSS1</option>
@@ -59,13 +69,13 @@
                 
              </div><br>
 
-             <div class="input-box">
-            <span  class="app">First Name</span><br>
-            <input type="text" id="app" placeholder="please enter your address" ><br>
+             <div class="input-box" id="shif">
+               <label  class="app">First Name</label><br>
+              <input type="text" id="app" placeholder="please enter your address" required ><br>
               </div><br>
-             <div class="input-box">
-            <span  class="app">Last Name</span><br>
-            <input type="text" id="app" placeholder="Surname First" ><br>
+             <div class="input-box" id="shift">
+              <label class="app">Last Name</label><br>
+               <input type="text" id="app" placeholder="Surname First" required ><br>
               </div><br>
            
             <div class="input-box" id="dbo">
@@ -97,14 +107,14 @@
             </div>
             <div class="input-box" id="prime">
               <label class="you">Address</label>
-              <input type="url" id="app" placeholder="please enter your address" >
+              <input type="url" id="app" placeholder="please enter your address" required >
             </div>
             <div class="input-box">
               <label id="idk">Department:</label><br>
-              <select class="sat">
-                <option id="again">science</option>
-                <option id="again">commercial</option>
-                <option id="again">humanities</option>
+              <select class="start">
+                <option id="nagain">science</option>
+                <option id="nagain">commercial</option>
+                <option id="nagain">humanities</option>
               </select>
             </div>
             <div class="input-box">
@@ -152,35 +162,62 @@
          
             <div class="sub">
               <button type="submit" class="submit">SUBMIT</button>
-            </div>
-         
-              
-              
-           
-            
+              <button class=reset type="reset">Reset</button>
+            </div>     
 
     </form>
-     
-      </div>
-      <script type="text/javascript">
-        function validate()
-        {
-          var isApplicantNameValid = true;
+  </div>  
+  <footer>
+    <div class="row">
+        <div class="col">
+            <img src="../img/index/ogunmodedelogo.png" alt="school_logo" class="school_logo">
+            <p>Wesbite developed by the Programming Club members of Ogunmodede Senior High School using HTML, CSS and little JS.</p>
+        </div>
+        <div class="col">
+            <h3>Address <div class="underline"><span></span></div></h3>
+            <!-- <p><i class="fas fa-map-marker"></i></p> -->
+            <p>39, Ekundayo Street, Oloja Estate</p>
+            <p>Papa, Epe, Lagos</p> 
+            <p class="email-id">Ogunmodede@gmail.com</p>
+            <h4>08012345678</h4>
+        </div>
+        <div class="col">
+            <h3>Explore<div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./staff.html">Staff</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./admission.html">Enquires</a></li>
+            </ul>
+               
+        </div>
+        <div class="col">
 
-          if(document.getElementById("app").value == "");
-          {
-            isApplicantNameValid=false;
-            document.getElementsByClassName("app").innerHTML = "please enter your name";
-            document.getElementsByClassName("app").style.color = "red";
-          }
-          else(){
-            isApplicantNameValid= true;
-            document.getElementsByClassName("app").innerHTML = "valid";
-            document.getElementsByClassName("app").style.color = "red";
+            <h3>Newsletter for Parents<div class="underline"><span></span></div></h3>
+            <form>
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            </form>
 
-          }
-        }
-      </script>
+            <div class="social-icons">
+                <a>  <i class="fa-brands fa-facebook-f"></i> </a>
+                <a>  <i class="fa-brands fa-twitter"></i> </a>
+                <a>  <i class="fa-brands fa-instagram"></i> </a>
+                <a>  <i class="fa-brands fa-whatsapp"></i> </a>
+              
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <p class="copyright">&copy; 2022 Programmers Club, Ogunmodede Senior College</p>
+</footer>
+
+ 
       <script src="https://kit.fontawesome.com/220eb269e4.js" crossorigin="anonymous"></script>
+      
 </body>
 </html>

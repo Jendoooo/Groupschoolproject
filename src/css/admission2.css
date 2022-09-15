@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,15 +8,16 @@
     font-family: 'Montserrat', sans-serif;
     
 }
-
+ */
 
 body{
     background: url(./coverimg.JPG);
     background-size:cover;
-    height: 120vh;
+    height: 110vh;
     align-items: center;
     justify-content: center;
-    display: flex;
+   
+   
 }
 
 input{
@@ -29,15 +30,14 @@ input{
 }
 .container{
     font-size: larger;
-    height:930px;
-      width: 550%;
-      max-width: 750px;
+    height:935px;
+    width: 750px;
     background:rgb(223, 196, 196);
       margin:  30px;
       padding: 28px;
       border-radius: 10px;
       box-shadow:inset  -2px 2px 2px 2px white ;
-      display: grid;
+      display:grid;
 }
 .form-title{
     text-transform: uppercase;
@@ -54,12 +54,13 @@ input{
     justify-content: space-between;
     padding: 20px 0;
     margin-top: 20px;
+
 }
 .input-box{
     display: flex;
     flex-wrap:wrap ;
-    width: 45%;  
-    margin-top: 50px;  
+    width: 35%;  
+    margin-top: 40px;  
 }
 
 .you{
@@ -90,7 +91,14 @@ input{
     position:relative ;
     width: 70px;
     display: grid;
-    top: 25px;
+    top: 30px;
+    left: 15px;
+}
+#select{
+    margin-left: 130px;
+}
+#shift{
+    margin-left: 170px;
 }
 
 #app{
@@ -99,6 +107,7 @@ input{
     resize: none;
     margin-top: 40px;
     background:none;
+    
 }
 .app span {
     margin-top:15px;
@@ -113,7 +122,7 @@ input{
     border-bottom:1.5px solid black ;
     border-right: 1.5px solid black;
     outline: none;
-    margin-bottom: 10px;
+   
     display: flex;
     flex-wrap: wrap;
  } 
@@ -150,6 +159,7 @@ input{
     color: darkred;
     font-weight: bolder;
     margin-top: 25px;
+    margin-left: 180px;
 }
 #prime{
     margin-top: 5%;
@@ -193,12 +203,22 @@ input{
     text-align: center;
     display: flex;
 }
+.reset{
+    height:65px;
+    width: 65%;
+    margin-top: 0px;
+    margin-left: 100px;
+    background-color:brown;
+    color: whitesmoke;
+    font-size:larger ;
+    font-weight: bolder;
+}
 .submit{
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 65px;
-    width:80%;
+    width:65%;
     background-color:brown;
     color: whitesmoke;
     font-weight: bolder;
@@ -236,6 +256,14 @@ select{
     height:25px;
     outline: none;
 }
+.start{
+    width: 150px;
+    color: white;
+    height: 30px;
+    font-size:14px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
 .sat{
     width: 150px;
     color: white;
@@ -253,168 +281,60 @@ select{
 .value{
     color: white;
 }
-
- /* for smartphones */
- @media(max-width:600px){
+/* for smartphones  */
+@media(max-width:600px){
     body{
-        height: 130vh;
+        height: 110vh;
+        width: 100%;
     }
     .container{
-        min-width: 370px;
-        max-height: 780px;
-    
-        font-size: larger;
-        justify-content: space-between;
+        max-width: 320px;
+        max-height: 650px;
     }
     .input-box{
         margin-bottom: 12px;
-        width: 80%;
+        width: 60%;
         justify-content: space-between;
         margin-top: 20px;
     }
     .user{
-        max-height: 600px;
+        max-height: 470px;
         overflow: auto;
         justify-content: space-between;
     }
-    .user::-webkit-scrollbar-button{
-          width:4;
+    #select{
+        margin-left: 0px;
     }
-    #dbo{
-        margin-top: 10px;
+    #shift{
+        margin-left: 0px;
     }
     #gender{
-        margin-bottom: 30px;
-        margin-top: 30px;
-    }
-    .sat{
-        width: 130px;
-        color: white;
-        height: 30px;
-        font-size:14px;
-        text-transform: uppercase;
-        margin-top: 40px;
-        margin-right:30px;
-    }
-    #again{
-        color: white;
-    }
-    .submit{
-       position:absolute;
-       height: 50px;
-       width: 200px;
-       left: 110px;
+        margin-left: 0px;
     }
     
-    #sent{
-        /* height: 20px;
-        position:relative ;
-        width: 70px;
-        display: flex;
-        top: 10px;
-        left:-50px */
-        border-radius:7px ;
-    font-size: 16px;
-    background-color:whitesmoke ;
-    border-top:1.5px solid black;
-    border-bottom:1.5px solid black ;
-    border-left: 1.5px solid black;
-    border-right: 1.5px solid black;
-    height:25px;
-    outline: none;
-    left: -70px;
-    top:0;
+    .user::-webkit-scrollbar-button{
+          width:0;
     }
-
- }
-  @media(max-width:162px){
-    .container{
-        height: 500px;
-        max-width: 100px;
-        max-height: 100px;
-        text-align: center;
-        margin-right: 100px;
-        justify-content: space-between;
-        background-size: cover;
+    .reset{
+        height:50px;
+        width: 150%;
+        margin-top: 15px;
+        margin-left: 100px;
+        background-color:brown;
+        color: whitesmoke;
+        font-size:larger ;
+        font-weight: bolder;
     }
-    .user{
-        text-align:end;
-        max-height: 150px;
-        overflow: auto;
-        justify-content: space-between;
-    }
-    .sat{
-        width: 100px;
-        color: white;
-        height: 30px;
-        font-size:14px;
-        text-transform: uppercase;
-        margin-top: 40px;
-        margin-right:50px;
-    }
-    #again{
-        color: white;
-    }
-    
     .submit{
         justify-content: center;
-        display: flex;
+        align-items: center;
         text-align: center;
         height: 50px;
-        width:50%;
+        width:80%;
+        margin-top: 15px;
         background-color:brown;
         color: whitesmoke;
         font-weight: bolder;
         font-size: larger;
-        float:left
     }
-    .user::-webkit-scrollbar{
-        width: 0;
-  }
-    .input-box{
-        margin-bottom: 30px;
-        width: 100%;
-        display:flex;
-        text-align: center;
-    
-    }
-    input{
-        width: 100px;
-        display: grid;
-    }
-    #dob{
-        width: 150px;
-        display: flex;
-    }
- .form-title{
-        text-align: ;
-        display: flex;
-    }
-} 
-@media(max-width:320px){
-    .user{
-        max-height: 280px;
-        overflow: auto;
-
-    }
-    .form-title{
-        margin-bottom:-50px;
-        margin-top:-20px;
-        text-align: start;
-    }
-    .container{
-       min-width: 280px;
-        max-height: 410px;
-        text-align:center;
-       
-        justify-content: space-between;
-        display: grid; 
-    }
-    .user::-webkit-scrollbar{
-        width: 5px;
-    }
-  .submit{
-    margin-top: 10px;
-  }
-
 }
