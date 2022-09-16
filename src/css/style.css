@@ -852,6 +852,11 @@ nav {
     display: block;
     padding:0;
     height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+    z-index: 5;
    
 
 
