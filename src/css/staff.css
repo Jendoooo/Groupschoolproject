@@ -205,7 +205,18 @@ body{
     margin: auto;
     padding: 60px 0;
 }
+#staff img{
+    border-radius: 50%;
+    
+}
+#staff a:hover{
+    transform: scale(3.0);
 
+
+}
+#staff{
+    margin: auto;
+}
 
 
 
@@ -293,15 +304,16 @@ body{
      
         
      } 
-    .restofstaff .talk{
-        top: 200px;
-    }
+    
     .intro .talk{
         margin-top: -42px;
     }
     .container .oga_officers{
         margin-top: 200px;
         background-color: red;
+    }
+    .staff_members{
+        top: 200px;
     }
 
 }

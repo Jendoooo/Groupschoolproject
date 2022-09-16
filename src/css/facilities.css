@@ -19,12 +19,12 @@ main .image{
     background-size: cover;
     background-position: center;
     height: 450px;
-    width: 100%;
+    width: 1200pxpx;
     animation: animate alternate-reverse 30s forwards infinite running ease-in-out; 
     display: flex;
     align-items: center;
     padding: 40px;
-    
+    border: 1px solid grey;
     
   
   
@@ -133,7 +133,7 @@ main .image .text p{
     color: white;
 }
 .content .boxes .box .img {
-    background: url(./img/index/banner.PNG);
+    background: url(../img/index/banner.PNG);
     background-repeat: no-repeat;
     background-position: center;
     height: 230px;
@@ -149,37 +149,37 @@ main .image .text p{
 
 @keyframes animate{
     0%{
-        background-image: url(./img/index/coverimg.JPG);
+        background-image: url(../img/index/coverimg.JPG);
     }
     10%{
-        background-image: url(./img/staff/5b7b532a-d0c7-4c9e-80d7-a1d2717904c7.jpg);
+        background-image: url(../img/staff/5b7b532a-d0c7-4c9e-80d7-a1d2717904c7.jpg);
     }
     20%{
-        background-image: url(./img/contact/vtech.JPG);
+        background-image: url(../img/contact/vtech.JPG);
     }
     30%{
-        background-image: url(./img/index/banner.PNG);
+        background-image: url(../img/index/banner.PNG);
     }
     40%{
-        background-image: url(./img/facilities/ict/ictfrontview.JPG);
+        background-image: url(../img/facilities/ict/ictfrontview.JPG);
     }
     50%{
-        background-image: url(./img/index/success2.PNG);
+        background-image: url(../img/index/success2.PNG);
     }
     60%{
-        background-image: url(./img/index/testlogo.jpg);
+        background-image: url(../img/index/testlogo.jpg);
     }
     70%{
-        background-image: url(./img/staff/mrs_\ vitalis.jpg);
+        background-image: url(../img/staff/mrs_\ vitalis.jpg);
     }
     80%{
-        background-image: url(./img/index/IMG_1086.JPG);
+        background-image: url(../img/index/IMG_1086.JPG);
     }
     90%{
-        background-image: url(./img/staff/mr_\ onibeju.jpg);
+        background-image: url(../img/staff/mr_\ onibeju.jpg);
     }
     100%{
-        background-image: url(./img/facilities/ict/charlesdanielpc.JPG);
+        background-image: url(../img/facilities/ict/charlesdanielpc.JPG);
     }
 }
 
