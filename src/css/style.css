@@ -840,7 +840,7 @@ footer .underline span{
     }
 
 .header{
-    background: yellow;
+    background: none;
 }
 
     
@@ -1227,7 +1227,8 @@ main .text p{
 
 .intro .bottom .box{
 
-    width: 230px;
+    width: 300px;
+    max-width: 300px;
     height: 300px;
     max-height: 300px;
    
@@ -1236,6 +1237,7 @@ main .text p{
     display: flex;
     align-items: center;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
     
     
     
@@ -1372,7 +1374,8 @@ main .text p{
     margin: auto;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
-    background: yellow;
+    background-color: none;
+   
     
 
 }
