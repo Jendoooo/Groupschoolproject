@@ -48,7 +48,7 @@ nav {
     padding: 2% 6%;
     justify-content: space-around;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: white;
 
     height: 8vh;
 
@@ -104,8 +104,8 @@ nav .base {
 .nav-links ul li:hover::after{
     content: " ";
     width: 100%;
-    border: 2px solid grey;
-    background-color: grey;
+    border: 2px solid var(--school-color);
+    background-color: var(--school-color);
     display: block;
     margin: auto;
     height: 2px;
@@ -134,6 +134,7 @@ main .school_logo{
 
     display: flex;
     align-items:flex-end;
+    
    
    
 
@@ -214,6 +215,13 @@ main .text p{
 
 }
 
+figcaption{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .intro .top .welcome{
     float: right;
     flex-basis: 45%;
@@ -258,6 +266,7 @@ main .text p{
 
 .intro .top .welcome .content .text{
   text-align: center;
+  padding: 20px;
 }
 
 .intro .top .welcome .content h1{
@@ -1180,6 +1189,7 @@ main .text p{
 
 .intro .top .welcome .content .text{
   text-align: center;
+  padding: 20px;
 }
 
 .intro .top .welcome .content h1{
