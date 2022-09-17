@@ -874,6 +874,7 @@ nav .base {
     /* outline: 5px var(--school-color); */
     opacity: 1;
     z-index: 2;
+    outline: 2px solid var(--school-color);
 
    
  
@@ -885,6 +886,7 @@ nav .base .icons{
     float: left;
     width: 20%;
     height: 100%;
+    background: white;
     
     
 }
@@ -914,6 +916,7 @@ nav .base .firstlogo{
     width: 80%;
     justify-content: end;
     height: 100%;
+    background: white;
     
 }
 
