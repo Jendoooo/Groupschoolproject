@@ -884,6 +884,7 @@ nav .base {
 nav .base .icons{
     float: left;
     width: 20%;
+    height: 100%;
     
     
 }
@@ -912,6 +913,7 @@ nav .base .firstlogo{
     display: flex;
     width: 80%;
     justify-content: end;
+    height: 100%;
     
 }
 
@@ -1013,7 +1015,7 @@ nav .base .firstlogo img{
 
 main{
     width:100vw;
-    height: 50vh;
+    height: 100vh;
     background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.JPG); 
     /* background: white; */
     background-size: cover;
