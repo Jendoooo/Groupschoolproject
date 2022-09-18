@@ -151,8 +151,6 @@ nav .base {
     z-index: 2;
     /* outline: 2px solid var(--school-color); */
 
-   
- 
   
     
 }
@@ -162,6 +160,8 @@ nav .base .icons{
     width: 20%;
     height: 100%;
     background: white;
+   
+    
     
     
 }
@@ -174,9 +174,7 @@ nav .base .icons .fa{
     
 }
 
-nav .base .icons  #menu{
 
-}
 
 nav .base .icons #cancel{
     display: none;
@@ -187,12 +185,13 @@ nav .base .icons #cancel{
 }
 
 nav .base .firstlogo{
+    float: right;
     display: flex;
     width: 80%;
     justify-content: end;
     height: 100%;
     background: white;
-    
+ 
 }
 
 nav .base .firstlogo img{
@@ -220,7 +219,7 @@ nav .base .firstlogo img{
 .nav-links ul{
     position: fixed;
     top: 7.5vh;
-    left: -205px;
+    left: -225px;
     background: white;
     height: 90%;
     width: 50%;
@@ -245,6 +244,7 @@ nav .base .firstlogo img{
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bolder;
+    display: block;
 }
 
 .nav-links ul li:hover{

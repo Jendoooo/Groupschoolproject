@@ -575,9 +575,7 @@ figcaption{
     text-align: center;
 }
 
-.offer ul li:hover {
-    /* background-color: var(--school-color); */
-}
+
 
 .offer .admission{
     height: 25%
@@ -912,9 +910,7 @@ nav .base .icons .fa{
     
 }
 
-nav .base .icons  #menu{
 
-}
 
 nav .base .icons #cancel{
     display: none;
@@ -1530,13 +1526,8 @@ main .text p{
     text-align: center;
     
 }
-.offer ul li:second-child{
-    line-height: ;
-}
 
-.offer ul li:hover {
-    /* background-color: var(--school-color); */
-}
+
 
 .offer .admission{
     height: 50vh
