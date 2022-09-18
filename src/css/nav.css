@@ -7,7 +7,6 @@ html{
 }
 
 
-
 nav {
     /* width: 100%;
     height: 80px; */
@@ -17,7 +16,7 @@ nav {
     padding: 2% 6%;
     justify-content: space-around;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: white;
 
     height: 8vh;
 
@@ -25,7 +24,6 @@ nav {
 
     
 }
-
 
 nav .base {
     display:none;
@@ -35,9 +33,6 @@ nav .base {
 .header i{
     display: none;
 }
-
-
-
 
 
 .nav-links{
@@ -77,8 +72,8 @@ nav .base {
 .nav-links ul li:hover::after{
     content: " ";
     width: 100%;
-    border: 2px solid grey;
-    background-color: grey;
+    border: 2px solid var(--school-color);
+    background-color: var(--school-color);
     display: block;
     margin: auto;
     height: 2px;
@@ -129,14 +124,14 @@ nav {
     /* background-color: white; */
     /* opacity: 0.8; */
     display: block;
-    padding:0;
+    padding-left:10px;
+    padding-right: 10px;
     height: 100%;
     position: fixed;
     top: 0;
     width: 100vw;
     height: 8vh;
     z-index: 5;
-   
    
 
 
@@ -148,12 +143,13 @@ nav {
 
 nav .base {
     background: white;
-    width: 100%;
+    width: 95%;
     display: flex;
     background-color: white;
     /* outline: 5px var(--school-color); */
     opacity: 1;
     z-index: 2;
+    /* outline: 2px solid var(--school-color); */
 
    
  
@@ -164,6 +160,8 @@ nav .base {
 nav .base .icons{
     float: left;
     width: 20%;
+    height: 100%;
+    background: white;
     
     
 }
@@ -192,6 +190,8 @@ nav .base .firstlogo{
     display: flex;
     width: 80%;
     justify-content: end;
+    height: 100%;
+    background: white;
     
 }
 
@@ -251,32 +251,5 @@ nav .base .firstlogo img{
     background-color: var(--school-color);
 }
 
-.nav-links ul li:hover a{
-    color: white;
-}
 
-
-
-.nav-links ul li::after{
-    content: " ";
-    width: 0%;
-    border: 2px solid blue;
-    display: none;
-    margin: auto;
-    height: 2px;
-    transition: 0.5s;
-    background-color: #222;
-
-}
-
-.nav-links ul li:hover::after{
-    content: " ";
-    width: 100%;
-    border: 2px solid grey;
-    background-color: grey;
-    display: none;
-    margin: auto;
-    height: 2px;
-    transition: 0.5s;
-}
 }

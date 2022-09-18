@@ -863,9 +863,13 @@ nav {
     height: 100%;
     position: fixed;
     top: 0;
+
     width: 100vw;
     height: 8vh;
     z-index: 5;
+    padding-left: 4px;
+    padding-right: 10px;
+    
    
 
 
@@ -877,13 +881,13 @@ nav {
 
 nav .base {
     background: white;
-    width: 100%;
+    width: 98%;
     display: flex;
     background-color: white;
     /* outline: 5px var(--school-color); */
     opacity: 1;
     z-index: 2;
-    outline: 2px solid var(--school-color);
+    
 
    
  
@@ -954,15 +958,15 @@ nav .base .firstlogo img{
 .nav-links ul{
     position: fixed;
     top: 7.5vh;
-    left: -205px;
+    left: -220px;
     background: white;
-    height: 90%;
+    height: 95%;
     width: 50%;
     text-align: center;
     height: 100vh;
     /* transform: translateX(-200px); */
     /* transition: .5s; */
-    opacity: 0.9;
+    opacity: 1;
     
 }
 

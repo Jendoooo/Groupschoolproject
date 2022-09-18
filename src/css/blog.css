@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+
+html{
+    /* font-size: 62.5%; */
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+nav {
+    /* width: 100%;
+    height: 80px; */
+    /* background-color: white; */
+    /* opacity: 0.8; */
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+
+    height: 8vh;
+
+    opacity: 1;
+
+    
+}
+
+nav .base {
+    display:none;
+}
+
+
+.header i{
+    display: none;
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #8e0e1e;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+
+.nav-links ul li::after{
+    content: " ";
+    width: 0%;
+    border: 2px solid blue;
+    display: none;
+    margin: auto;
+    height: 2px;
+    transition: 0.5s;
+    background-color: #222;
+
+}
+
+.nav-links ul li:hover::after{
+    content: " ";
+    width: 100%;
+    border: 2px solid var(--school-color);
+    background-color: var(--school-color);
+    display: block;
+    margin: auto;
+    height: 2px;
+    transition: 0.5s;
+}
+
+.school_logo{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width :480px){
+
+
+
+
+
+    html,body{
+        width: 100vw;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    body{
+        font-family: 'Montserrat', sans-serif;
+        width: 100vw;
+        /* height: 400vh; */
+        position: relative;
+        background: white;
+       
+    
+        
+        
+    }
+
+.header{
+    background: yellow;
+}
+
+    
+nav {
+    /* width: 100%;
+    height: 80px; */
+    /* background-color: white; */
+    /* opacity: 0.8; */
+    display: block;
+    padding:0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+    z-index: 5;
+   
+
+
+ 
+
+    
+}
+
+
+nav .base {
+    background: white;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    /* outline: 5px var(--school-color); */
+    opacity: 1;
+    z-index: 2;
+    outline: 2px solid var(--school-color);
+
+   
+ 
+  
+    
+}
+
+nav .base .icons{
+    float: left;
+    width: 20%;
+    height: 100%;
+    background: white;
+    
+    
+}
+
+nav .base .icons .fa{
+    font-size: 30px;
+    padding-top: 10px;
+    color: var(--school-color);
+
+    
+}
+
+nav .base .icons  #menu{
+
+}
+
+nav .base .icons #cancel{
+    display: none;
+    font-size: 30px;
+
+
+    /* transform: translateY(-22px); */
+}
+
+nav .base .firstlogo{
+    display: flex;
+    width: 80%;
+    justify-content: end;
+    height: 100%;
+    background: white;
+    
+}
+
+nav .base .firstlogo img{
+    width: 50px;
+    
+   
+}
+   
+  
+
+
+.header i{
+    display: block;
+}
+
+
+.nav-links{
+    flex: 1;
+    /* text-align: center; */
+    background-color: pink;
+    padding: 0;
+    
+}
+
+.nav-links ul{
+    position: fixed;
+    top: 7.5vh;
+    left: -250px;
+    background: white;
+    height: 90%;
+    width: 50%;
+    text-align: center;
+    height: 100vh;
+    /* transform: translateX(-200px); */
+    /* transition: .5s; */
+    opacity: 0.9;
+    
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: block;
+    padding: 20px;
+    
+}
+
+.nav-links ul li a {
+    color: #8e0e1e;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.nav-links ul li:hover{
+    background-color: var(--school-color);
+}
+
+
+}
+
+:root{
+    --school-color:#8e0e1e;
+}
+
+footer{
+    
+    height: 34vh;
+    text-align: center;
+    width: 100%;
+    /* background: linear-gradient(to right, #00093c , #2d0b00); */
+    /* background: linear-gradient(to right, #8e0e1e,#00093c ); */
+    /* background-color: yellow; */
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-right-radius: 250px; 
+    font-size: 13px;
+    line-height: 20px;
+    outline: 2px solid var(--school-color);
+    /* outline: #8e0e1e; */
+    border-bottom: none;
+    /* background-color: #8e0e1e; */
+    /* opacity: 0.5; */
+    /* background: yellow; */
+    /* border-radius: 200px; */
+    background: whitesmoke;
+    background: white;
+    /* outline: 5px solid var(--school-color); */
+    /* clip-path: inset(0px round 250px 0px 0px); */
+    
+}
+
+#contactfooter{
+    height: 50vh;
+    border: none;
+}
+
+#stafffooter{
+    z-index: 1;
+}
+
+footer .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: black;
+}
+
+footer .col{
+    flex-basis: 25%;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+footer .col:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 5px solid red; */
+    /* text-align: center; */
+}
+
+footer .col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+footer .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+footer .school_logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+footer .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black
+}
+
+footer form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+footer form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+footer form input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+
+footer form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+   
+}
+
+
+
+footer form button .fa fa-arrow-right{
+    font-size: 160px;
+
+}
+.col .fas {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: white;
+    background: #8e0e1e;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+
+footer .social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: white;
+    background: #8e0e1e;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+footer hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+footer .copyright{
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    /* margin: 20px auto; */
+    text-align: center;
+    color: black;
+    
+}
+
+footer .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px ;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+
+footer .underline span{
+    width: 15px;
+    height: 100%;
+    background: #8e0e1e;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: progress 2s linear infinite;
+}
+
+@keyframes progress{
+    0%{
+        left: -20px;
+    }
+
+    100%{
+        left: 100%;
+    }
+}
+
+@media (max-width :700px){
+    footer{
+        bottom: unset;
+    }
+
+    footer .col{
+        flex-basis: 100%;
+    }
+
+    footer .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
+    }
+    
+  
+
+
+}
