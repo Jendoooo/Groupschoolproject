@@ -419,7 +419,7 @@ textarea{
         height: 100vh;
         /* transform: translateX(-200px); */
         /* transition: .5s; */
-        opacity: 0.9;
+        opacity: 1;
         
     }
 
@@ -441,7 +441,14 @@ textarea{
 
     .nav-links ul li:hover{
         background-color: var(--school-color);
+        color: white;
     }
+
+    .nav-links ul li:hover a{
+
+        color: white;
+    }
+
 
 
 

@@ -983,6 +983,7 @@ nav .base .firstlogo img{
 
 .nav-links ul li:hover{
     background-color: var(--school-color);
+    color: white;
 }
 
 .nav-links ul li:hover a{
@@ -1000,6 +1001,7 @@ nav .base .firstlogo img{
     height: 2px;
     transition: 0.5s;
     background-color: #222;
+    display: none;
 
 }
 
@@ -1012,6 +1014,7 @@ nav .base .firstlogo img{
     margin: auto;
     height: 2px;
     transition: 0.5s;
+    display: none;
 }
 
 .school_logo{
@@ -1290,15 +1293,15 @@ main .text p{
 
 }
 .intro .bottom .box:nth-child(2){
-    border: 3px solid green;
+    border: 3px solid orange;
 
 }
 .intro .bottom .box:nth-child(3){
-    border: 3px solid blue;
+    border: 3px solid orange;
 
 }
 .intro .bottom .box:nth-child(4){
-    border: 3px solid red;
+    border: 3px solid orange;
 
 }
 
