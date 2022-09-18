@@ -252,5 +252,10 @@ nav .base .firstlogo img{
     color: white;
 }
 
+.nav-links ul li:focus a{
+    background: var(--school-color);
+    color: white;
+}
+
 
 }
