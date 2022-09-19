@@ -3209,8 +3209,6 @@ main .text p{
 
 
 /* for smaller smartphones in landscape orientation and by extension smaller vh available */
-
-
 @media only screen and (min-width:481px) and (max-width:931px) and (max-height:320px){
     
     nav {
