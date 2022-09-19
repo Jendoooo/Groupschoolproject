@@ -101,7 +101,7 @@ nav .base {
 
 
 
-
+/* for smartphones in potrait mode */
 @media (max-width :480px){
 
 
@@ -302,6 +302,290 @@ nav .base {
         height: 400vh;
       
     }
+
+
+}
+
+/* for smartphones in landscape mode and small tablets  */
+
+@media only screen and (min-width:481px) and (max-width:930px){
+    nav {
+        /* width: 100%;
+        height: 80px; */
+        /* background-color: white; */
+        /* opacity: 0.8; */
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+        min-width: 100vw;
+        height: 10vh;
+        padding: 0;
+        opacity: 1;
+    
+        
+    }
+    
+    nav .base {
+        display:none;
+    }
+    
+    
+    .header i{
+        display: none;
+    }
+    
+    
+    .nav-links{
+        flex: 1;
+        text-align: center;
+        background: white;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .nav-links ul{
+        width: 100%;
+        height: 100%;
+
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        position: relative;
+        line-height: 20px;
+    }
+    
+    .nav-links ul li a {
+        color: #8e0e1e;
+        text-decoration: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+    
+    
+    
+    .nav-links ul li::after{
+        content: " ";
+        width: 0%;
+        border: 2px solid blue;
+        display: none;
+        margin: auto;
+        height: 1px;
+        transition: 0.5s;
+        background-color: #222;
+    
+    }
+    
+    .nav-links ul li:hover::after{
+        content: " ";
+        width: 100%;
+        border: 2px solid var(--school-color);
+        background-color: var(--school-color);
+        display: block;
+        margin: auto;
+        height: 1px;
+        transition: 0.5s;
+    }
+
+
+    footer{
+      
+        height:70vh;
+        text-align: center;
+        width: 100%;
+        /* background: linear-gradient(to right, #00093c , #2d0b00); */
+        /* background: linear-gradient(to right, #8e0e1e,#00093c ); */
+        /* background-color: yellow; */
+        color: #fff;
+        padding: 100px 0 30px;
+        border-top-right-radius: 200px; 
+        font-size: 13px;
+        line-height: 20px;
+        border: 2px solid var(--school-color);
+        /* outline: #8e0e1e; */
+        border-bottom: none;
+        /* background-color: #8e0e1e; */
+        /* opacity: 0.5; */
+        /* background: yellow; */
+        /* border-radius: 200px; */
+        background: whitesmoke;
+        background: white;
+        /* outline: 5px solid var(--school-color); */
+        
+    }
+    
+    footer .row{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: black;
+    }
+    
+    footer .col{
+        flex-basis: 25%;
+        padding: 10px;
+        text-align: left;
+        
+    }
+    
+    footer .col:nth-child(1){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* border: 5px solid red; */
+        /* text-align: center; */
+    }
+    
+    footer .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 15%;
+    }
+    
+    footer .col h3{
+        width: fit-content;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    
+    footer .school_logo{
+        width: 80px;
+        margin-bottom: 30px;
+    }
+    
+    footer .email-id{
+        width: fit-content;
+        border-bottom: 1px solid #ccc;
+        margin: 20px 0;
+    }
+    
+    footer ul li{
+        list-style: none;
+        margin-bottom: 12px;
+    }
+    
+    footer ul li a {
+        text-decoration: none;
+        color: black
+    }
+    
+    footer form{
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 50px;
+    }
+    
+    footer form .far{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    
+    footer form input{
+        width: 100%;
+        background: transparent;
+        border: 0;
+        outline: none;
+    }
+    
+    
+    footer form button{
+        background: transparent;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    
+       
+    }
+    
+    
+    
+    footer form button .fa fa-arrow-right{
+        font-size: 160px;
+    
+    }
+    .col .fas {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        color: white;
+        background: #8e0e1e;
+        margin-right: 10px;
+        cursor: pointer;
+    
+    }
+    
+    footer .social-icons .fa-brands{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        font-size: 10px;
+        color: white;
+        background: #8e0e1e;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    
+    footer hr{
+        width: 90%;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        margin: 20px auto;
+    }
+    
+    footer .copyright{
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        /* margin: 20px auto; */
+        text-align: center;
+        color: black;
+        
+    }
+    
+    footer .underline{
+        width: 100%;
+        height: 5px;
+        background: #767676;
+        border-radius: 3px ;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        overflow: hidden;
+    }
+    
+    
+    footer .underline span{
+        width: 15px;
+        height: 100%;
+        background: #8e0e1e;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        animation: progress 2s linear infinite;
+    }
+
+
+
+
 
 
 }
