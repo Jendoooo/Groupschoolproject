@@ -448,6 +448,42 @@ textarea{
 
         color: white;
     }
+    .nav-links ul li:focus a{
+        background: var(--school-color);
+        color: white;
+    }
+
+    .nav-links ul li:hover a{
+        color: white;
+    }
+
+
+
+    .nav-links ul li::after{
+        content: " ";
+        width: 0%;
+        border: 2px solid blue;
+        display: none;
+        margin: auto;
+        height: 2px;
+        transition: 0.5s;
+        background-color: #222;
+        display: none;
+
+    }
+
+    .nav-links ul li:hover::after{
+        content: " ";
+        width: 100%;
+        border: 2px solid grey;
+        background-color: grey;
+        display: none;
+        margin: auto;
+        height: 2px;
+        transition: 0.5s;
+        display: none;
+    }
+
 
 
 
