@@ -200,7 +200,7 @@ body{
     text-align: center;
     height: 30vh;
     /* border-bottom: 2px solid #8e0e1e; */
-    outline: #8e0e1e;
+    
     background: whitesmoke;
     margin: auto;
     padding: 60px 0;
@@ -222,6 +222,10 @@ body{
 
 
 @media screen and (max-width:600px){
+    .base{
+        
+    }
+    
     .nav-links{
         display: block;
     }
@@ -296,6 +300,7 @@ body{
 @media only screen and (max-width:320px){
     .container{
         height: 280vh;
+        
         /* max-height: 900px; */
         display: grid;
         padding: 30px;
@@ -306,11 +311,11 @@ body{
      } 
     
     .intro .talk{
-        margin-top: -42px;
+        top: -42px;
     }
     .container .oga_officers{
-        margin-top: 200px;
-        background-color: red;
+        top: 500px;
+       
     }
     .staff_members{
         top: 200px;
@@ -318,4 +323,33 @@ body{
 
 }
 
- 
+@media (max-width:428px){
+    
+    .container .oga_officers .header{
+        background-color: white;
+    }
+    .container{
+        height: 350vh;
+       
+        /* max-height: 900px; */
+        display: grid;
+        padding: 30px;
+        /* background: green; */
+       
+     
+        
+     } 
+    
+    .intro .talk{
+        /* margin-top: px; */
+    }
+    .container .oga_officers{
+        margin-top: 200px;
+       
+    }
+    .staff_members{
+        top: 200px;
+    
+    
+
+}
