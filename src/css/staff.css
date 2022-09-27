@@ -38,6 +38,21 @@ body{
 
    
 } 
+#first{
+    height: 120vh;
+}
+#second{
+    
+}
+#third{
+    height: 290vh;
+    
+    
+    
+}
+#four{
+    height: 100vh;
+}
 .head{
     text-align: center;
     text-decoration: underline;
@@ -222,9 +237,7 @@ body{
 
 
 @media screen and (max-width:600px){
-    .base{
-        
-    }
+    
     
     .nav-links{
         display: block;
@@ -239,8 +252,9 @@ body{
         height:50vh ;
     }
 
+    
     .container{
-        height: 160vh;
+        height: 400vh;
         margin-top: -200px;
         
        
@@ -308,8 +322,19 @@ body{
        
      
         
-     } 
-    
+     }
+    #first{
+        height: 400vh;
+    } 
+    #second{
+        height: 800vh;
+    }
+    #third{
+        height: 2000vh;
+    }
+    #four{
+        height: 500vh;
+    }
     .intro .talk{
         top: -42px;
     }
@@ -320,6 +345,9 @@ body{
     .staff_members{
         top: 200px;
     }
+    .intro{
+        height: 70vh;
+    }
 
 }
 
@@ -329,7 +357,7 @@ body{
         background-color: white;
     }
     .container{
-        height: 350vh;
+        height: 5000vh;
        
         /* max-height: 900px; */
         display: grid;
@@ -339,17 +367,25 @@ body{
      
         
      } 
-    
-    .intro .talk{
-        /* margin-top: px; */
+     #first{
+        height: 300vh;
+        
+     }
+    #third{
+       height: 1500vh;
     }
+    #four{
+        height: 300vh;
+    }
+    
+
+    
     .container .oga_officers{
         margin-top: 200px;
        
     }
     .staff_members{
         top: 200px;
+    }
+}   
     
-    
-
-}

@@ -163,7 +163,7 @@ padding: 30px;
 } 
 .head{
     text-align: center;
-    text-decoration: underline;
+    
 }
 
 .container .oga_officers{
@@ -268,7 +268,10 @@ padding: 30px;
     text-align: center;
 
 }
-
+.teams{
+    /* margin: auto; */
+    
+}
 .teams img{
     border-radius: 100px;
     padding: .5em;
@@ -283,6 +286,59 @@ padding: 30px;
 }
 .teams h2{
     text-align: center;
+}
+
+
+@media (max-width:480px){
+    /* .arms > *{
+        display: flex;
+        flex-direction: column;
+    } */
+    .arms{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: .1em;
+        width: 100vw;
+    }
+   
+    .arms > *{
+        padding: 0.1em;
+    }
+    
+    .arms > * h2{
+        text-align: center;
+        text-transform: capitalize;
+        color: #8e0e1e;
+    }
+    
+    .arms > * p{
+        padding: 1.5em 0.5em;
+        font-size: 1em;
+        text-align: center;
+        
+    }
+    
+    .arms .vision{
+
+        width: 100%;
+
+       
+        
+    }
+
+    .arms .mission{
+        width: 100%;
+    }
+
+
+    .head{
+        font-size: xx-large;
+       
+    }
+    .achievement .title{
+        font-size: xx-small;
+    }
 }
 
 
