@@ -308,7 +308,7 @@ figcaption{
    align-items: center;
    padding: 40px;
    max-height: 50vh;
-   animation: animate alternate-reverse 30s forwards infinite running ease-in-out;
+   animation: animate alternate-reverse 60s forwards infinite running ease-in-out;
    background-size: cover;
    background-position: center;
 }
@@ -392,7 +392,7 @@ figcaption{
     background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.JPG);
     background-size: cover;
     background-position: center;
-   background-repeat: repeat;
+    background-repeat: repeat;
     /* background: yellow; */
 
     /* animation: animate alternate-reverse 30s forwards infinite running ease-in-out; */
@@ -411,26 +411,41 @@ figcaption{
     30%{
         background-image: url(../img/index/bg/coverimg\ \(4\).JPG);
     }
-    40%{
+    35%{
         background-image: url(../img/index/bg/coverimg\ \(5\).JPG);
     }
-    50%{
+    40%{
         background-image: url(../img/index/bg/coverimg\ \(6\).JPG);
     }
-    60%{
+    45%{
         background-image: url(../img/index/bg/coverimg\ \(7\).JPG);
     }
-    70%{
+    50%{
         background-image: url(../img/index/bg/coverimg\ \(8\).JPG);
     }
-    80%{
+    55%{
         background-image: url(../img/index/bg/coverimg\ \(9\).JPG);
     }
-    90%{
+    65%{
         background-image: url(../img/index/bg/coverimg\ \(10\).JPG);
     }
-    100%{
+    70%{
         background-image: url(../img/index/bg/coverimg\ \(11\).JPG);
+    }
+    75%{
+        background-image: url(../img/index/bg/coverimg\ \(12\).JPG);
+    }
+    80%{
+        background-image: url(../img/index/bg/coverimg\ \(13\).JPG);
+    }
+    85%{
+        background-image: url(../img/index/bg/coverimg\ \(14\).JPG);
+    }
+    90%{
+        background-image: url(../img/index/bg/coverimg\ \(15\).JPG);
+    }
+    100%{
+        background-image: url(../img/index/bg/coverimg\ \(16\).JPG);
     }
 }
 
