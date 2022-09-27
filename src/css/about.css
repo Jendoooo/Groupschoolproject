@@ -152,10 +152,11 @@ main .main_img img{
 
 
 .container{
-height: 110vh;
+max-height: 220vh;
 /* max-height: 900px; */
 display: grid;
 padding: 30px;
+background-color: green;
 /* background: green; */
 
 

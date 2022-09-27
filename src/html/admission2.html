@@ -3,47 +3,16 @@
 <head>
     <link rel="stylesheet" href="../css/admission2.css">
     <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css">
-
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="icon" type="image/x-icon" href="./src/img/index/ogunmodedelogo.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="../js/index.js" defer></script>
+   <script src="./src/js/index.js" defer></script>
     <title>Admission</title>
 </head>
 
 <body>
-  <section class="header">
-    <nav>
-        <div class="base">
-            <div class="icons">
-                <i class="fa fa-bars" onclick = "showMenu()" id="menu"></i>
-                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()" id="cancel"></i>
-            </div>
-            <div class="firstlogo">
-                <img src="../img/index/ogunmodedelogo.png" alt="School Logo">
-                
-            </div>
-        </div>
-       
-        <!-- <p>OgunmodedeCollege</p> -->
-        <div class="nav-links" id="navLinks">
-            <ul id="actualnav">
-                <li><a href="../../index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./staff.html">MEET OUR STAFF</a></li>
-                <li><a href="./blog.html">BLOG/NEWSPAGE</a></li>
-                <li><a href="./facilities.html">GALLERY</a></li>
-                <li><a href="./contact.html">ENQUIRIES </a></li>
-            </ul>
-    
-        </div>
-       
-      
-        
-    </nav> 
-</section>
 
 <main>
   <div class="container">
@@ -149,79 +118,96 @@
                 <option >Zamfara State</option>
               </select>
             </div>
-         
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1"required><br>
+                <input type="radio" class="dot2" name="gender" id="dot-2"required>
+                <span class="gender-title">gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">female</span>
+                    </label>
+                </div> 
+            </div>
         </div>
-        <div class="gender-details">
-            <input type="radio" name="gender" id="dot-1"required>
-            <input type="radio" name="gender" id="dot-2"required>
-            <span class="gender-title">gender</span>
-            <div class="category">
-                <label for="dot-1">
-                    <span class="dot one"></span>
-                    <span class="gender">male</span>
-                </label>
-                <label for="dot-2">
-                    <span class="dot two"></span>
-                    <span class="gender">female</span>
-                </label>
-            </div> 
-        </div>
+       
         <div class="button">
             <button type="submit" value="register">Register</button><br>
             <button type="reset" id="reset" value="Reset">Reset</button>
         </div>
     
     </form>
-  </div>
+</div>
 </main>
   
- 
-<footer>
-  <div class="row">
-      <div class="col">
-          <img src="./src/img/index/ogunmodedelogo.png" alt="school_logo" class="school_logo">
-          <p>Wesbite developed by the Programming Club members of Ogunmodede Senior High School using HTML, CSS and little JS.</p>
-      </div>
-      <div class="col">
-          <h3>Address <div class="underline"><span></span></div></h3>
-          <!-- <p><i class="fas fa-map-marker"></i></p> -->
-          <p>39, Ekundayo Street, Oloja Estate</p>
-          <p>Papa, Epe, Lagos</p> 
-          <p class="email-id">Ogunmodede@gmail.com</p>
-          <h4>08012345678</h4>
-      </div>
-      <div class="col">
-          <h3>Explore<div class="underline"><span></span></div></h3>
-          <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="./src/html/about.html">About Us</a></li>
-              <li><a href="./src/html/staff.html">Staff</a></li>
-              <li><a href="./src/html/gallery.html">Gallery</a></li>
-              <li><a href="./src/html/admission1.html">Enquires</a></li>
-             
-      </div>
-      <div class="col">
 
-          <h3>Newsletter for Parents<div class="underline"><span></span></div></h3>
-          <form method="POST" data-netlify="true">
-              <i class="far fa-envelope"></i>
-              <input type="email" name="email" id ="email"placeholder="Enter your email address" required>
-              <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-          </form>
+<script>
+  function validateform() {
+      var name =
+          document.forms.RegForm.Name.value;
+      var email =
+          document.forms.RegForm.EMail.value;
+      var phone =
+          document.forms.RegForm.Telephone.value;
+      var what =
+          document.forms.RegForm.Subject.value;
+      var password =
+          document.forms.RegForm.Password.value;
+      var address =
+          document.forms.RegForm.Address.value;
+      var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;  //Javascript reGex for Email Validation.
+      var regPhone=/^\d{10}$/;                                        // Javascript reGex for Phone Number validation.
+      var regName = /\d+$/g;                                    // Javascript reGex for Name validation
 
-          <div class="social-icons">
-              <a>  <i class="fa-brands fa-facebook-f"></i> </a>
-              <a>  <i class="fa-brands fa-twitter"></i> </a>
-              <a>  <i class="fa-brands fa-instagram"></i> </a>
-              <a>  <i class="fa-brands fa-whatsapp"></i> </a>
-            
-          </div>
-      </div>
-  </div>
+      if (name == "" || regName.test(name)) {
+          window.alert("Please enter your name properly.");
+          name.focus();
+          return false;
+      }
 
+      if (address == "") {
+          window.alert("Please enter your address.");
+          address.focus();
+          return false;
+      }
+       
+      if (email == "" || !regEmail.test(email)) {
+          window.alert("Please enter a valid e-mail address.");
+          email.focus();
+          return false;
+      }
+        
+      if (password == "") {
+          alert("Please enter your password");
+          password.focus();
+          return false;
+      }
 
-  <hr>
-  <p class="copyright">&copy; 2022 Programmers Club, Ogunmodede Senior College</p>
-</footer>
+      if(password.length <6){
+          alert("Password should be atleast 6 character long");
+          password.focus();
+          return false;
+
+      }
+      if (phone == "" || !regPhone.test(phone)) {
+          alert("Please enter valid phone number.");
+          phone.focus();
+          return false;
+      }
+
+      if (what.selectedIndex == -1) {
+          alert("Please enter your course.");
+          what.focus();
+          return false;
+      }
+
+      return true;
+  }
+</script>
+
 </body>
 </html>

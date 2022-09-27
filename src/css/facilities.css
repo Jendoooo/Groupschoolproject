@@ -1,194 +1,142 @@
 *{
-    padding: 0;
+    padding: o;
     margin: 0;
-    
+    box-sizing: border-box;
 }
+  
 
-
-
-
-header nav{
-    height: 100px;
-    background-color: whitesmoke;
-    text-align: center;
-}
-
-
-main .image{
+header .image1{
+    width: 100%;
+    height: 600px;
+    background: url(../img/facilities/ict/ictfrontview.JPG);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 450px;
-    width: 1200pxpx;
-    animation: animate alternate-reverse 30s forwards infinite running ease-in-out; 
-    display: flex;
-    align-items: center;
-    padding: 40px;
-    border: 1px solid grey;
-    
-  
-  
-}
-
-main .image .text{
-    color: white;
-   
-}
-main .image .text h1{
-    font-size: 70px;
-    text-transform: capitalize;
-}
-main .image .text p{
-    text-transform: capitalize;
-    font-size: large;
-    text-indent: 20px;
-}
-.heading{
-    height: 450px;
-    border: 5px solid red;
-    padding: 10px;
-    text-align: center;
-    border-radius: 25px;
-    width: 95%;
-    margin: auto;
-    
-}
-.heading h1{
-    text-transform: uppercase;
-    font-size: 50px;
-    font-family: monospace;
-    margin-top: 90px;
-}
-.heading p{
-    text-transform: capitalize;
-    font-size: 30px;
-    padding: 50px;
-    margin-top: -40px;
-}
-
-
-.content .boxes{
-    background-color: grey;
-    height: 550px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    border-radius: 25px;
-    margin-top: 10px;
-    width: 98%;
-    margin: auto;
-    margin-top: 10px;
-}
-
-.content .boxes .box{
-    height: 350px;
-    width: 290px;
-    background-color: azure;
-    text-align: center;
-    padding: 3px;
-    border: 2px solid;
-    border-radius: 25px;
-}
-.content .boxes .box:nth-child(1):hover{
-    transform: scale(1.1);
-    transition: 1s;
-
-}
-
-.content .boxes .box:nth-child(2):hover{
-    transform: scale(1.1);
-    transition: 1s;
-
-}
-
-.content .boxes .box:nth-child(3):hover{
-    transform: scale(1.1);
-    transition: 1s;
-
-}
-
-.content .boxes .box:nth-child(4):hover{
-    transform: scale(1.1);
-    transition: 1s;
-
-}
-.content .boxes .box .text{
-    font-weight: bolder;
-    font-size: 25px;
-}
-.content .boxes .icon{
-    background-color: red;
-    height: 90px;
-    width: 90px;
-    border-radius: 50% ;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    
-
-}
-.content .boxes .box i{
-    color: white;
-}
-.content .boxes .box .img {
-    background: url(../img/index/banner.PNG);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 230px;
-    width: 95%;
-    border: 1px solid;
-    margin: auto;
-    border-radius: 25px;
-    
-    
-    
-}
-
-
-@keyframes animate{
-    0%{
-        background-image: url(../img/index/coverimg.JPG);
-    }
-    10%{
-        background-image: url(../img/staff/5b7b532a-d0c7-4c9e-80d7-a1d2717904c7.jpg);
-    }
-    20%{
-        background-image: url(../img/contact/vtech.JPG);
-    }
-    30%{
-        background-image: url(../img/index/banner.PNG);
-    }
-    40%{
-        background-image: url(../img/facilities/ict/ictfrontview.JPG);
-    }
-    50%{
-        background-image: url(../img/index/success2.PNG);
-    }
-    60%{
-        background-image: url(../img/index/testlogo.jpg);
-    }
-    70%{
-        background-image: url(../img/staff/mrs_\ vitalis.jpg);
-    }
-    80%{
-        background-image: url(../img/index/IMG_1086.JPG);
-    }
-    90%{
-        background-image: url(../img/staff/mr_\ onibeju.jpg);
-    }
-    100%{
-        background-image: url(../img/facilities/ict/charlesdanielpc.JPG);
-    }
-}
-
-
-footer{
-    background-color: whitesmoke;
-    height: 250px;
-    width: 100%;
-    bottom: 0px;
+    font-size: 40px;
     text-align: center;
+    color: white;
+    flex-direction: column;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+header .image1 p{
+    width: 85%;
+}
+header .image1 button{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px ;
+    background:#8e0e1e ;
+    opacity: 0.85;
+    font-size: 25px;
+    color: #fff;
+    border: none;
+}
+header .text{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    background-color: #8e0e1e;
+    opacity: 0.85;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.content{
+    padding: 50px;
+}
+.content .content1{
+    padding: 15px;
+}
+
+.content .content1 .head{
+    font-weight: bold;
+}
+.content .content1 .text{
+    text-transform: capitalize;
+}
+.image-groups{
+    background: #2222;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.image{
+    padding: 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+.image img{
+    width: 200px;
+    height: 200px;
+    clip-path: circle(50% at 50% 50%);
+}
+.image:hover{
+    background: #ddd;
+}
+@media (max-width:480px){
+    header .image1{
+        height: 400px;
+        font-size: 25px;
+    }
+    header .image1 p{
+        width: 100%;
+    }
+    header .image1 button{
+        width: 150px;
+        height: 20px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    header .text{
+        font-size: 30px;
+    }
+    .content{
+        padding: 20px;
+    }
+    .content .content1{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .content .content1 .head{
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .content .content1 .text{
+        text-transform: capitalize;
+    }
+    .content .content1:nth-child(1){
+        border: 1px solid red;
+    }
+    .content .content1:nth-child(2){
+        border: 1px solid blue;
+    }
+    .content .content1:nth-child(3){
+        border: 1px solid pink;
+    }
+    .content .content1:nth-child(4){
+        border: 1px solid purple;
+    }
+    .content .content1:nth-child(5){
+        border: 1px solid orange;
+    }
+    .content .content1:nth-child(6){
+        border: 1px solid orangered;
+    }
+  
     
 }

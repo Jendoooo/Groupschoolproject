@@ -5,7 +5,9 @@ html{
     font-family: 'Montserrat', sans-serif;
     
 }
-
+body{
+    overflow-x: hidden;
+}
 
 *{
     margin: 0;
@@ -90,19 +92,20 @@ nav .base {
 
 
 .contact{
-    background-image: linear-gradient(rgba(168, 171, 182, 0.7),rgba(4,9,30,0.7)), url(../img/contact/vtech.JPG); 
+    background-image: linear-gradient(rgba(168, 171, 182, 0.7),rgba(4,9,30,0.7)), url(../img/admission2/IMG_2849.JPG); 
     background-size: cover;
     background-position: center;
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     /* margin-top: -6px; */
-   
+   margin-left: -100px;
+    
 
 
 }
@@ -181,11 +184,12 @@ nav .base {
 }
 
 .contactform{
-    width: 60%;
+    width: 40%;
     padding: 40px;
-    background-color: #fff;
+    background-color: whitesmoke;
 
     border-radius: 20px;
+    opacity: 0.65;
 }
 
 .contactform h2{
@@ -507,9 +511,10 @@ textarea{
     .contact .content{
         
         width: 370px;
-        /* background: yellow; */
-    
+        /* background: yellow;  */
+        margin-top: 90px;
         text-align: center;
+        width: 90vw;
 
     }
 
@@ -609,11 +614,11 @@ textarea{
     }
 
     .contactform{
-        width:75%;
-        
+        width:70%;
+        margin: auto;
         padding: 40px;
         background-color: #fff;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         border-radius: 20px;
     }
 
