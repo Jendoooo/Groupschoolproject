@@ -104,7 +104,7 @@ nav .base {
     align-items: center;
     flex-direction: column;
     /* margin-top: -6px; */
-   margin-left: -100px;
+    margin-left: -100px;
     
 
 
@@ -113,6 +113,7 @@ nav .base {
 .contact .content{
     max-width: 800px;
     text-align: center;
+    
 
 }
 
@@ -164,6 +165,7 @@ nav .base {
     border-radius: 50%;
     background: #fff;
     font-size: 22px;
+    color: #8e0e1e;
 
 
 }
@@ -253,13 +255,14 @@ nav .base {
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
-   
+    border-radius: 10px;
  
 }
 
 .contactform .inputbox input[type="submit"]:hover{
-    background-color: #fff;
-    border: 5px solid #8e0e1e;
+    transform: scale(1.1);
+    transition: 1s;
+    opacity: 0.555;
 }
 
 textarea{

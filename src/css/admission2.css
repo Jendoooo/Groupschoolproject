@@ -42,8 +42,8 @@ main{
 
 fieldset{
     width: 70%;
-    display: grid;
-    place-items: center;
+    display: block;
+
 
    
     max-width: 700px;
@@ -66,9 +66,15 @@ fieldset legend{
     transform: translateY(50%);
 }
 
+fieldset .img{
+    text-align: center;
+}
+
 fieldset .img img{
     height: 200px;
     width: 200px;
+    
+
 }
 
 form{
@@ -168,6 +174,7 @@ form input[type="radio"]{
     display: none;
 }
 form .button{
+ 
     height: 45px;
     margin: 45px 0;
     display: flex;
@@ -215,7 +222,7 @@ select{
     main{
         padding-top: 20%;
         padding-bottom: 0%;
-        background-color: yellow;
+        background-color: blue;
         display: flex;
         justify-content: center;
         /* background: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)),url(../img/admission2/IMG_2845.JPG);
@@ -227,11 +234,14 @@ select{
     fieldset{
         max-width: 100%;
         /* margin-top: 25%; */
-        height: 950px;
+        height: 1800px;
+       
         /* margin-bottom: 10%; */
     }
     .user-details{
-       height: 500px;
+       height: 900px;
+     
+      
     }
     form .user-details .input-box{
         margin-bottom: 15px;
@@ -245,7 +255,7 @@ select{
     }
     .container form .user-details{
         max-height: 600px;
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
     }
     .user-details::-webkit-scrollbar{
         width: 0;
@@ -255,6 +265,7 @@ select{
     }
     form .button button{
         width: 70%;
+        margin-top: 890px;
     }
 
     form .gender-details .gender-title{

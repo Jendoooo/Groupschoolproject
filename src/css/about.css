@@ -13,7 +13,13 @@
     margin: auto;
     background: white;
     overflow-x: hidden;
+
+
 }
+body p{
+    font-size: 23px;
+}
+
 
 
 
@@ -231,8 +237,38 @@ main .main_img img{
     padding: 50px;
 }
 
+.speech{
+    /* background-color: yellow; */
+    padding-top: 2em;
+    padding: 2em 2em;
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+.success h1{
+    text-align: center;
+}
 
 
+.success .teams {
+    text-align: center;
+    /* margin: auto; */
+    /* background-color: yellow; */
+    /* padding: 2em  ; */
+}
+ .success .team{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+.title1 h1{
+    padding: 2em ;
+    color: #8e0e1e;
+}
 
 
 
@@ -248,12 +284,9 @@ main .main_img img{
     width: 100vh;
     margin: auto;
 }
-.notable_awards h1{
-    text-align: center;
 
-}
 .teams{
-    /* margin: auto; */
+    margin: auto;
     
 }
 .teams img{
