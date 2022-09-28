@@ -2,41 +2,77 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/admission2.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav.css">
+
     <link rel="icon" type="image/x-icon" href="./src/img/index/ogunmodedelogo.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="./src/js/index.js" defer></script>
+   <script src="../js/index.js" defer></script>
     <title>Admission</title>
 </head>
 
 <body>
+    <section class="header">
+        <nav>
+            <div class="base">
+                <div class="icons">
+                    <i class="fa fa-bars" onclick = "showMenu()" id="menu"></i>
+                    <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()" id="cancel"></i>
+                </div>
+                <div class="firstlogo">
+                    <img src="../img/index/ogunmodedelogo.png" alt="School Logo">
+                    
+                </div>
+            </div>
+           
+            <!-- <p>OgunmodedeCollege</p> -->
+            <div class="nav-links" id="navLinks">
+                
+                
+                <ul id="actualnav">
+                    
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./staff.html">MEET OUR STAFF</a></li>
+                    <li><a href="./blog.html">BLOG/NEWSPAGE</a></li>
+                    <li><a href="./facilities.html">GALLERY</a></li>
+                    <li><a href="./contact.html">ENQUIRIES </a></li>
+                </ul>
+        
+            </div>
+           
+          
+            
+        </nav> 
+    </section>
+
+
 
 <main>
-  <div class="container">
+  <fieldset class="container">
+    <legend>REGISTRATION FORM</legend>
     <div class="img">
         <img src="../img/index/ogunmodedelogo.png">
     </div>
-    <div class="title">registration</div>
-    <form name="RegForm" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >
+    <form name="Admission Registration Form" method="POST" data-netlify="true" >
         <div class="user-details">
             <div class="input-box">
-                <span class="details">first name</span>
-                <input type="text" name="Name" placeholder="please enter your name first name" required>
+                <span class="details">first name 
+                <input type="text" name="First Name" placeholder="please enter your name first name" required>
             </div>
             <div class="input-box">
                 <span class="details">middle name</span>
-                <input type="text" name="Name" placeholder="please enter your middle name"required>
+                <input type="text" name="Middle Name" placeholder="please enter your middle name"required>
             </div>
             <div class="input-box">
                 <span class="details">last name</span>
-                <input type="text" name="Name" placeholder="please enter your last name"required>
+                <input type="text" name="Last Name" placeholder="please enter your last name"required>
             </div>
             <div class="input-box">
                 <span class="details">phone number</span>
-                <input type="text" name="telephone" placeholder="+234"required>
+                <input type="text" name="Telephone" placeholder="+234"required>
             </div>
             <div class="input-box">
                 <span class="details">email address</span>
@@ -141,9 +177,73 @@
         </div>
     
     </form>
-</div>
+  </fieldset>
 </main>
+
+
+
+<footer id="stafffooter">
+    <div class="row">
+        <div class="col">
+            <img src="../img/index/ogunmodedelogo.png" alt="school_logo" class="school_logo">
+            <p>Wesbite developed by the Programming Club members of Ogunmodede Senior High School using HTML, CSS and little JS.</p>
+        </div>
+        <div class="col">
+            <h3>Address <div class="underline"><span></span></div></h3>
+            <p>39, Ekundayo Street, Oloja Estate</p>
+            <p>Papa, Epe, Lagos</p> 
+            <p class="email-id">Ogunmodede@gmail.com</p>
+            <h4>08012345678</h4>
+        </div>
+        <div class="col">
+            <h3>Explore<div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./staff.html">Staff</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./admission.html">Enquires</a></li>
+            </ul>
+               
+               
+        </div>
+        <div class="col">
+
+            <h3>Newsletter for Parents<div class="underline"><span></span></div></h3>
+            <form>
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+            </form>
+
+            <div class="social-icons">
+                <a>  <i class="fa-brands fa-facebook-f"></i> </a>
+                <a>  <i class="fa-brands fa-twitter"></i> </a>
+                <a>  <i class="fa-brands fa-instagram"></i> </a>
+                <a>  <i class="fa-brands fa-whatsapp"></i> </a>
+              
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <p class="copyright">&copy; 2022 Programmers Club, Ogunmodede Senior College</p>
+</footer>
   
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
   function validateform() {
@@ -208,6 +308,8 @@
       return true;
   }
 </script>
+
+<script src="https://kit.fontawesome.com/220eb269e4.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

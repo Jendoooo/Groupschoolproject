@@ -1,10 +1,6 @@
-:root{
-    --school-color:#8e0e1e;
-}
 
 footer{
-    
-    /* height: 34vh; */
+  
     text-align: center;
     width: 100%;
     /* background: linear-gradient(to right, #00093c , #2d0b00); */
@@ -15,7 +11,7 @@ footer{
     border-top-right-radius: 250px; 
     font-size: 13px;
     line-height: 20px;
-    outline: 2px solid var(--school-color);
+    border: 2px solid var(--school-color);
     /* outline: #8e0e1e; */
     border-bottom: none;
     /* background-color: #8e0e1e; */
@@ -25,17 +21,7 @@ footer{
     background: whitesmoke;
     background: white;
     /* outline: 5px solid var(--school-color); */
-    /* clip-path: inset(0px round 250px 0px 0px); */
     
-}
-
-#contactfooter{
-    height: 50vh;
-    border: none;
-}
-
-#stafffooter{
-    z-index: 1;
 }
 
 footer .row{
@@ -208,8 +194,12 @@ footer .underline span{
     }
 }
 
-/* @media (max-width :700px){
+
+
+/* for normal screen smartphones in potrait orientation */
+@media only screen and (min-width:321px) and (max-width :480px){
     footer{
+        height: 100.9vh;
         bottom: unset;
     }
 
@@ -224,13 +214,15 @@ footer .underline span{
   
 
 
-} */
+}
 
+
+/* for normal smartphones in landscape orientation and for some smaller  tablets */
 
 @media only screen and (min-width:481px) and (max-width:930px){
     footer{
       
-        
+        height:27vh;
         text-align: center;
         width: 100%;
         /* background: linear-gradient(to right, #00093c , #2d0b00); */
@@ -238,13 +230,12 @@ footer .underline span{
         /* background-color: yellow; */
         color: #fff;
         padding: 100px 0 30px;
-        border-top-right-radius: 150px; 
+        border-top-right-radius: 200px; 
         font-size: 13px;
         line-height: 20px;
-        border: 1px solid var(--school-color);
+        border: 2px solid var(--school-color);
         /* outline: #8e0e1e; */
         border-bottom: none;
-        
         /* background-color: #8e0e1e; */
         /* opacity: 0.5; */
         /* background: yellow; */
@@ -414,5 +405,223 @@ footer .underline span{
         left: 10px;
         animation: progress 2s linear infinite;
     }
+    
+    @keyframes progress{
+        0%{
+            left: -20px;
+        }
+    
+        100%{
+            left: 100%;
+        }
+    }
 }
 
+/* for smaller smartphones in landscape orientation and by extension smaller vh available */
+@media only screen and (min-width:481px) and (max-width:931px) and (max-height:320px){    
+    footer{
+    
+        height: 50vh;
+        text-align: center;
+        width: 100%;
+        /* background: linear-gradient(to right, #00093c , #2d0b00); */
+        /* background: linear-gradient(to right, #8e0e1e,#00093c ); */
+        /* background-color: yellow; */
+        color: #fff;
+        padding: 100px 0 30px;
+        border-top-right-radius: 0px; 
+        font-size: 13px;
+        line-height: 20px;
+        border: 2px solid var(--school-color);
+        /* outline: #8e0e1e; */
+        border-bottom: none;
+        /* background-color: #8e0e1e; */
+        /* opacity: 0.5; */
+        /* background: yellow; */
+        /* border-radius: 200px; */
+        background: whitesmoke;
+        background: white;
+        /* outline: 5px solid var(--school-color); */
+        border-top: 2px solid var(--school-color);
+        
+    }
+
+    footer .row{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content:space-around;
+        color: black;
+        padding: 0;
+    }
+
+    footer .col{
+        flex-basis: 25%;
+        padding: 10px;
+        text-align: left;
+        /* background: yellow; */
+        
+    }
+
+    footer .col:nth-child(1){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-basis: 30%;
+        /* border: 5px solid red; */
+        /* text-align: center; */
+    }
+
+    footer .col:nth-child(2){
+        flex-basis: 15%;
+
+    }
+    
+    footer .col:nth-child(3){
+        flex-basis: 15%;
+    }
+
+    footer .col:nth-child(4){
+        flex-basis: 100%;
+      
+    }
+
+    footer .col h3{
+        width: fit-content;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    footer .school_logo{
+        width: 80px;
+        margin-bottom: 30px;
+    }
+
+    footer .email-id{
+        width: fit-content;
+        border-bottom: 1px solid #ccc;
+        margin: 20px 0;
+    }
+
+    footer ul li{
+        list-style: none;
+        margin-bottom: 12px;
+    }
+
+    footer ul li a {
+        text-decoration: none;
+        color: black
+    }
+
+    footer form{
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 50px;
+    }
+
+    footer form .far{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    footer form input{
+        width: 100%;
+        background: transparent;
+        border: 0;
+        outline: none;
+    }
+
+
+    footer form button{
+        background: transparent;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+
+    
+    }
+
+
+
+    footer form button .fa fa-arrow-right{
+        font-size: 160px;
+
+    }
+    .col .fas {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        font-size: 12px;
+        color: white;
+        background: #8e0e1e;
+        margin-right: 15px;
+        cursor: pointer;
+
+    }
+
+    footer .social-icons{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .social-icons .fa-brands{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+        color: white;
+        background: #8e0e1e;
+        margin-right: 15px;
+        cursor: pointer;
+        
+    }
+
+    footer hr{
+        width: 90%;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        margin: 20px auto;
+    }
+
+    footer .copyright{
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        /* margin: 20px auto; */
+        text-align: center;
+        color: black;
+        
+    }
+
+    footer .underline{
+        width: 100%;
+        height: 5px;
+        background: #767676;
+        border-radius: 3px ;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        overflow: hidden;
+    }
+
+
+    footer .underline span{
+        width: 15px;
+        height: 100%;
+        background: #8e0e1e;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        animation: progress 2s linear infinite;
+    }
+}
