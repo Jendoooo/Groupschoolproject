@@ -12,6 +12,7 @@
     background-color: whitesmoke;
     margin: auto;
     background: white;
+    overflow-x: hidden;
 }
 
 
@@ -326,6 +327,17 @@ main .main_img img{
         max-width: 100%;
     }
 
+}
+
+@media only screen and (min-width:1025px){
+    main .main_img{
+        /* background: url(../img/about/intro_img.JPG); */
+        background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/admission2/IMG_2850.JPG); 
+        height: max(50vh, 500px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 

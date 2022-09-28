@@ -230,7 +230,7 @@ footer .underline span{
 @media only screen and (min-width:481px) and (max-width:930px){
     footer{
       
-        height:70vh;
+        
         text-align: center;
         width: 100%;
         /* background: linear-gradient(to right, #00093c , #2d0b00); */
@@ -238,12 +238,13 @@ footer .underline span{
         /* background-color: yellow; */
         color: #fff;
         padding: 100px 0 30px;
-        border-top-right-radius: 200px; 
+        border-top-right-radius: 150px; 
         font-size: 13px;
         line-height: 20px;
-        border: 2px solid var(--school-color);
+        border: 1px solid var(--school-color);
         /* outline: #8e0e1e; */
         border-bottom: none;
+        
         /* background-color: #8e0e1e; */
         /* opacity: 0.5; */
         /* background: yellow; */
