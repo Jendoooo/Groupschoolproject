@@ -60,24 +60,27 @@ main .main_img img{
     display: flex;
     flex-direction: row;
     outline: 2px solid #8e0e1e;
-    padding: 3em;
+    padding: 5em 3em;
   
 }
 
 .arms > *{
     padding: 1.5em;
+    height: auto;
 }
 
 .arms > * h2{
     text-align: center;
     text-transform: capitalize;
     color: #8e0e1e;
+    padding: 1em 0em;
 }
 
 .arms > * p{
-    padding: 1.5em 0.5em;
-    font-size: 1em;
-    text-align: center;
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
     
 }
 
@@ -92,7 +95,7 @@ main .main_img img{
 
 .arms .vision ul li{
     width: 100%;
-    padding: 0.5em;
+    padding: 1em 0em;
     list-style: none;
     text-align: center;
     text-transform: capitalize;
@@ -108,8 +111,9 @@ main .main_img img{
 
 
 .arms .mission p{
-    font-size: 1.33em;
-    padding: 0.4em;
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 20px;
+    font-weight: 300;
     text-align: justify;
 }
 
@@ -150,22 +154,10 @@ main .main_img img{
    
 }
 
-
 .container{
-max-height: 220vh;
-/* max-height: 900px; */
-display: grid;
-padding: 30px;
-background-color: green;
-/* background: green; */
-
-
-
-} 
-.head{
     text-align: center;
-    
 }
+
 
 .container .oga_officers{
     text-align: center;
@@ -174,10 +166,12 @@ background-color: green;
 
 .container .header{
     padding-top: 30px;
-    color: #444;
+    color: white;
     font-size: 20px;
     margin:auto;
     line-height: 50px;
+    background-color: #8e0e1e;
+    opacity: 0.85;
 
 }
 
@@ -186,7 +180,7 @@ background-color: green;
 .container .oga_officers img{
     width: 150px;
     border-radius: 50%;
-
+   
 }
 
 .container .sub_container{
@@ -236,29 +230,17 @@ background-color: green;
     padding: 50px;
 }
 
-.teams .about{
-    margin: 20px 0;
-    font-weight: lighter;
-    color: #4e4e4e;
-}
 
-.teams .smpages{
-    margin: 0px;
-}
 
-.smpages a{
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    transition: .4s;
-}
-.smpages a:hover{
-    transform: scale(3.0);
-}
 
-.smpages a i{
-    color: #444;
-}
+
+
+
+
+
+
+
+
 
 .notable_awards{
     background: whitesmoke;
@@ -290,7 +272,7 @@ background-color: green;
 }
 
 
-@media (max-width:480px){
+@media (max-width:600px){
     /* .arms > *{
         display: flex;
         flex-direction: column;
@@ -314,8 +296,7 @@ background-color: green;
     }
     
     .arms > * p{
-        padding: 1.5em 0.5em;
-        font-size: 1em;
+        
         text-align: center;
         
     }
@@ -340,6 +321,11 @@ background-color: green;
     .achievement .title{
         font-size: xx-small;
     }
+
+    .container .sub_container .teams{
+        max-width: 100%;
+    }
+
 }
 
 
