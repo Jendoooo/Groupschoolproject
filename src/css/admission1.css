@@ -1,7 +1,12 @@
+:root{
+    --school-color:#8e0e1e;
+}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 button{
     color: white;
@@ -31,6 +36,7 @@ button{
     align-items: center;
     flex-direction: column;
     color: white;
+    padding: 0px;
 
 }
 .image h3{
@@ -38,6 +44,9 @@ button{
 }
 .image .text{
     font-size: 35px;
+    display: flex;
+    /* flex-direction: column; */
+    padding: 20px;
 }
 span{
     background-color: rgb(177,0,37);
@@ -83,3 +92,25 @@ img{
     width: 100%;
     
 }
+@media (max-width:580px){
+    .text{
+       
+    }
+    .image h3{
+        font-size:50px;
+    }
+    .image{
+        background-position:center;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    img{
+        padding:0px ;
+        margin: 0px;
+    }
+}
+

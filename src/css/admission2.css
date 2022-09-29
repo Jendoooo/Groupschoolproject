@@ -311,7 +311,7 @@ select{
     .buttons{
         width: 65%;
         height: 3%;
-        transform: translateY(-50%);
+        /* transform: translateY(-50%); */
     }
     
     
