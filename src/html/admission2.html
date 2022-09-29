@@ -57,10 +57,12 @@
         <img src="../img/index/ogunmodedelogo.png">
     </div>
     <form name="Admission Registration Form" method="POST" data-netlify="true" >
+        <input type="hidden" name="subject" 
+  value="Admission Registration Form from ogunmodedeseniorhighschool.netlify.app" />
         <div class="user-details">
             <div class="input-box">
                 <span class="details">first name 
-                <input type="text" name="First Name" placeholder="please enter your name first name" required>
+                <input type="text" name="First Name" placeholder="please enter your  first name" required>
             </div>
             <div class="input-box">
                 <span class="details">middle name</span>
@@ -76,7 +78,7 @@
             </div>
             <div class="input-box">
                 <span class="details">email address</span>
-                <input type="text" name="EMail" placeholder="@gmail.com"required>
+                <input type="text" name="Email" placeholder="@gmail.com"required>
             </div>
             <div class="input-box">
                 <span class="details">present class</span>
@@ -93,11 +95,11 @@
               </div>
             <div class="input-box">
                 <span class="details">Mother's Name</span>
-                <input type="text" name="mother" placeholder="mother's name" required>
+                <input type="text" name="mother's name" placeholder="mother's name" required>
             </div>
             <div class="input-box">
                 <span class="details">Father's Name</span>
-                <input type="text" name="father" placeholder="father's name"required>
+                <input type="text" name="father's name" placeholder="father's name"required>
             </div>
             <div class="input-box">
                 <span class="details">Address</span>
@@ -154,7 +156,7 @@
                 <option >Zamfara State</option>
               </select>
             </div>
-            <div class="gender-details">
+            <!-- <div class="gender-details">
                 <input type="radio" name="gender" id="dot-1"required><br>
                 <input type="radio" class="dot2" name="gender" id="dot-2"required>
                 <span class="gender-title">gender</span>
@@ -168,15 +170,23 @@
                         <span class="gender">female</span>
                     </label>
                 </div> 
+            </div> -->
+        
+            <div class="input-box">
+                <span class="details">Gender:</span>
+                <select name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
             </div>
         </div>
-       
-        <div class="button">
-            <button type="submit" value="register">Register</button><br>
-            <button type="reset" id="reset" value="Reset">Reset</button>
-        </div>
-    
+
     </form>
+    <div class="buttons">
+        <button type="submit" value="register" form="Admission Registration Form">Register</button>
+        <button type="reset" value="reset" form="Admission Registration Form">Reset</button>
+    </div>
+    
   </fieldset>
 </main>
 
