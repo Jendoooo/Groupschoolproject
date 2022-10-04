@@ -1,6 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
 
 
+:root{
+    --school-color:#8e0e1e;
+}
 
 *{
     margin: 0;
@@ -17,7 +20,12 @@
 
 }
 body p{
-    font-size: 23px;
+    /* font-size: 23px; */
+}
+
+
+.fa{
+    color: var(--school-color);
 }
 
 
@@ -25,7 +33,7 @@ body p{
 
 
 main .main_img{
-    background: url(../img/about/intro_img.JPG);
+    background: url(../img/about/intro_img.webp);
     height: max(50vh, 500px);
     background-position: center;
     background-repeat: no-repeat;
@@ -294,9 +302,8 @@ main .main_img img{
     padding: .5em;
 
     
-}.notable_awards .name .role{
-    text-align: center;
 }
+
 .teams:hover{
     background-color: #ddd;
     border-radius: 12px;
@@ -365,7 +372,7 @@ main .main_img img{
 @media only screen and (min-width:1025px){
     main .main_img{
         /* background: url(../img/about/intro_img.JPG); */
-        background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/admission2/IMG_2850.JPG); 
+        background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/admission2/IMG_2850.webp); 
         height: max(50vh, 500px);
         background-position: center;
         background-repeat: no-repeat;

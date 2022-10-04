@@ -46,6 +46,7 @@ nav {
     /* opacity: 0.8; */
     display: flex;
     padding: 2% 6%;
+    padding: 0;
     justify-content: space-around;
     align-items: center;
     background-color: white;
@@ -121,6 +122,7 @@ main{
 
     height: 90vh;
     background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.JPG); 
+    
     background-size: cover;
     background-position: center;
     display: flex;
@@ -389,7 +391,7 @@ figcaption{
     
     text-align: center;
     height: 50vh;
-    background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.JPG);
+    background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.webp);
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -400,53 +402,51 @@ figcaption{
 
 @keyframes animate{
     0%{
-        background-image: url(../img/index/bg/coverimg\ \(1\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(1\).webp);
     }
     10%{
-        background-image: url(../img/index/bg/coverimg\ \(2\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(2\).webp);
     }
     20%{
-        background-image: url(../img/index/bg/coverimg\ \(3\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(3\).webp);
     }
     30%{
-        background-image: url(../img/index/bg/coverimg\ \(4\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(4\).webp);
     }
     35%{
-        background-image: url(../img/index/bg/coverimg\ \(5\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(5\).webp);
     }
     40%{
-        background-image: url(../img/index/bg/coverimg\ \(6\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(6\).webp);
     }
     45%{
-        background-image: url(../img/index/bg/coverimg\ \(7\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(7\).webp);
     }
     50%{
-        background-image: url(../img/index/bg/coverimg\ \(8\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(8\).webp);
     }
     55%{
-        background-image: url(../img/index/bg/coverimg\ \(9\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(9\).webp);
     }
     65%{
-        background-image: url(../img/index/bg/coverimg\ \(10\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(10\).webp);
     }
     70%{
-        background-image: url(../img/index/bg/coverimg\ \(11\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(11\).webp);
     }
     75%{
-        background-image: url(../img/index/bg/coverimg\ \(12\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(12\).webp);
     }
     80%{
-        background-image: url(../img/index/bg/coverimg\ \(13\).JPG);
-    }
-    85%{
-        background-image: url(../img/index/bg/coverimg\ \(14\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(13\).webp);
     }
     90%{
-        background-image: url(../img/index/bg/coverimg\ \(15\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(14\).webp);
     }
     100%{
-        background-image: url(../img/index/bg/coverimg\ \(16\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(15\).webp);
     }
+    
 }
 
 .offer{
@@ -1051,7 +1051,7 @@ nav .base .firstlogo img{
 main{
     width:100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.JPG); 
+    background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.webp); 
     /* background: white; */
     background-size: cover;
     background-position: center;
@@ -1351,7 +1351,7 @@ main .text p{
     text-align: center;
     height: 100vh;
     width: 100vw;
-    background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.JPG);
+    background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.webp);
     background-size: cover;
     background-position: center;
    background-repeat: repeat;
@@ -1362,37 +1362,37 @@ main .text p{
 
 @keyframes animate{
     0%{
-        background-image: url(../img/index/bg/coverimg\ \(1\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(1\).webp);
     }
     10%{
-        background-image: url(../img/index/bg/coverimg\ \(2\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(2\).webp);
     }
     20%{
-        background-image: url(../img/index/bg/coverimg\ \(3\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(3\).webp);
     }
     30%{
-        background-image: url(../img/index/bg/coverimg\ \(4\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(4\).webp);
     }
     40%{
-        background-image: url(../img/index/bg/coverimg\ \(5\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(5\).webp);
     }
     50%{
-        background-image: url(../img/index/bg/coverimg\ \(6\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(6\).webp);
     }
     60%{
-        background-image: url(../img/index/bg/coverimg\ \(7\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(7\).webp);
     }
     70%{
-        background-image: url(../img/index/bg/coverimg\ \(8\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(8\).webp);
     }
     80%{
-        background-image: url(../img/index/bg/coverimg\ \(9\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(9\).webp);
     }
     90%{
-        background-image: url(../img/index/bg/coverimg\ \(10\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(10\).webp);
     }
     100%{
-        background-image: url(../img/index/bg/coverimg\ \(11\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(11\).webp);
     }
 }
 
@@ -1836,7 +1836,7 @@ nav .base .firstlogo img{
 main{
     width:100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.JPG); 
+    background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.webp); 
     /* background: white; */
     background-size: cover;
     background-position: center;
@@ -2136,7 +2136,7 @@ main .text p{
     text-align: center;
     height: 100vh;
     width: 100vw;
-    background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.JPG);
+    background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.webp);
     background-size: cover;
     background-position: center;
    background-repeat: repeat;
@@ -2147,37 +2147,37 @@ main .text p{
 
 @keyframes animate{
     0%{
-        background-image: url(../img/index/bg/coverimg\ \(1\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(1\).webp);
     }
     10%{
-        background-image: url(../img/index/bg/coverimg\ \(2\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(2\).webp);
     }
     20%{
-        background-image: url(../img/index/bg/coverimg\ \(3\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(3\).webp);
     }
     30%{
-        background-image: url(../img/index/bg/coverimg\ \(4\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(4\).webp);
     }
     40%{
-        background-image: url(../img/index/bg/coverimg\ \(5\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(5\).webp);
     }
     50%{
-        background-image: url(../img/index/bg/coverimg\ \(6\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(6\).webp);
     }
     60%{
-        background-image: url(../img/index/bg/coverimg\ \(7\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(7\).webp);
     }
     70%{
-        background-image: url(../img/index/bg/coverimg\ \(8\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(8\).webp);
     }
     80%{
-        background-image: url(../img/index/bg/coverimg\ \(9\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(9\).webp);
     }
     90%{
-        background-image: url(../img/index/bg/coverimg\ \(10\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(10\).webp);
     }
     100%{
-        background-image: url(../img/index/bg/coverimg\ \(11\).JPG);
+        background-image: url(../img/index/bg/coverimg\ \(11\).webp);
     }
 }
 
@@ -2510,7 +2510,7 @@ main .text p{
     main{
         width: 100vw;
         height: 90vh;
-        background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.JPG); 
+        background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.webp); 
         background-size: cover;
         background-position: center;
         display: flex;
@@ -2785,7 +2785,7 @@ main .text p{
         
         text-align: center;
         height: 50vh;
-        background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.JPG);
+        background:  linear-gradient(to right, rgba(168, 171, 182, 0.3),rgba(4,9,30,0.4)),url(../img/index/explore_imgbg.webp);
         background-size: cover;
         background-position: center;
        background-repeat: repeat;
@@ -2796,37 +2796,37 @@ main .text p{
     
     @keyframes animate{
         0%{
-            background-image: url(../img/index/bg/coverimg\ \(1\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(1\).webp);
         }
         10%{
-            background-image: url(../img/index/bg/coverimg\ \(2\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(2\).webp);
         }
         20%{
-            background-image: url(../img/index/bg/coverimg\ \(3\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(3\).webp);
         }
         30%{
-            background-image: url(../img/index/bg/coverimg\ \(4\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(4\).webp);
         }
         40%{
-            background-image: url(../img/index/bg/coverimg\ \(5\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(5\).webp);
         }
         50%{
-            background-image: url(../img/index/bg/coverimg\ \(6\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(6\).webp);
         }
         60%{
-            background-image: url(../img/index/bg/coverimg\ \(7\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(7\).webp);
         }
         70%{
-            background-image: url(../img/index/bg/coverimg\ \(8\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(8\).webp);
         }
         80%{
-            background-image: url(../img/index/bg/coverimg\ \(9\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(9\).webp);
         }
         90%{
-            background-image: url(../img/index/bg/coverimg\ \(10\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(10\).webp);
         }
         100%{
-            background-image: url(../img/index/bg/coverimg\ \(11\).JPG);
+            background-image: url(../img/index/bg/coverimg\ \(11\).webp);
         }
     }
     
@@ -3320,7 +3320,7 @@ main .text p{
     main{
         width: 100vw;
         height: 90vh;
-        background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.JPG); 
+        background-image: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)), url(../img/index/coverimage.webp); 
         background-size: cover;
         background-position: center;
         display: flex;
