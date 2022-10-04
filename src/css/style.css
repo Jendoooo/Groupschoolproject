@@ -2391,7 +2391,7 @@ main .text p{
 
 
     footer{
-        height: 100.9vh;
+        /* height: 100.9vh; */
         bottom: unset;
     }
 
@@ -3026,7 +3026,7 @@ main .text p{
     
     footer{
       
-        height:27vh;
+        /* height:27vh; */
         text-align: center;
         width: 100%;
         /* background: linear-gradient(to right, #00093c , #2d0b00); */
@@ -3779,7 +3779,7 @@ main .text p{
         
     footer{
     
-        height: 50vh;
+        /* height: 50vh; */
         text-align: center;
         width: 100%;
         /* background: linear-gradient(to right, #00093c , #2d0b00); */
@@ -4166,6 +4166,6 @@ main .text p{
     }
 
     footer{
-        height: 55vh;
+        /* height: 55vh; */
     }
 }
