@@ -41,7 +41,7 @@ main{
     background-position: center;
     background-size: cover;
     
-    justify-content: space-between;
+    
 }
 
 fieldset{
@@ -97,7 +97,7 @@ form{
 form .user-details .input-box{
     /* margin: 20px 0 12px 0; */
     width: calc(100% / 2 - 20px);
-    
+
 
 }
 
@@ -163,12 +163,15 @@ form .gender-details .category{
     display: flex;
     padding: 50px;
     justify-content: space-between;
-    width: 30%;
+    width: 50%;
     margin: auto;
+   
+    /* text-align: center; */
     
 }
 
 button{
+   width: 100px;
     appearance: none;
     background-color: #FAFBFC;
     border: 1px solid rgba(27, 31, 35, 0.15);
@@ -191,8 +194,8 @@ button{
     touch-action: manipulation;
     vertical-align: middle;
     white-space: nowrap;
-    word-wrap: break-word
-
+    word-wrap: break-word;
+    margin-top: 50px;
 }
 
 
@@ -247,80 +250,50 @@ select{
     line-height: inherit;
     text-transform: capitalize;
 }
-
-
-
-
-
-@media only screen and (max-width:480px){
+@media (max-width:480px) and (min-width:0px) {
     main{
         padding-top: 20%;
-        padding-bottom: 0%;
+        padding-bottom:0%;
         background-color: blue;
         display: flex;
         justify-content: center;
-        /* background: linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)),url(../img/admission2/IMG_2845.JPG);
         background-position: center;
-        background-size: cover; */
-        
-        
+       
+       
     }
     fieldset{
         max-width: 100%;
-        /* margin-top: 25%; */
-        /* height: 1800px; */
-       
-        /* margin-bottom: 10%; */
-        height: 200vh;
+      overflow-y: hidden;
+        height: 140vh;
         
     }
 
     form{
-        height: 75%;
+        /* height: 75%; */
         
     }
-    form .user-details{
-       /* height: 900px; */
+  
+    form .user-details .input-box{
+       width: 80%;
+       display: grid;
+          margin-top: 10px;
+          overflow-y: hidden;
+      }
+  
      
       
-    }
+      .container form .user-details{
+          height: 500px;
+         overflow: auto;
+         overflow-x: hidden;
+      }
+      .user-details::-webkit-scrollbar{
+          width: 2px;
+      }
+      .buttons{
+        
+      }  
+     
+}        
 
-   
-    form .user-details .input-box{
-      
-        width: 95%;
-    }
-
-   
-    
-    .container form .user-details{
-        max-height: 600px;
-        /* overflow-y: scroll; */
-    }
-    .user-details::-webkit-scrollbar{
-        width: 0;
-    }  
-   
-    /* form .button button{
-        width: 70%;
-        margin-top: 890px;
-    } */
-
-    form .gender-details .gender-title{
-        font-size: 20px;
-        font-weight: bolder;
-        text-transform: uppercase;
-        /* background-color: yellow; */
-        margin-left: 0%;
-    }
-
-    .buttons{
-        width: 65%;
-        height: 3%;
-        /* transform: translateY(-50%); */
-    }
-    
-    
-  
-}
 

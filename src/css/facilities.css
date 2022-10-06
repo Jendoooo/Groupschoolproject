@@ -1,142 +1,49 @@
 *{
-    padding: o;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
   
 
-header .image1{
+main header {
     width: 100%;
     height: 600px;
-    background: url(../img/facilities/ict/ictfrontview.JPG);
+    background:  linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)),url(../img/facilities/ict/ictfrontview.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 15px;
     text-align: center;
     color: white;
     flex-direction: column;
-    font-weight: bolder;
-    text-transform: uppercase;
-}
-header .image1 p{
-    width: 85%;
-}
-header .image1 button{
-    width: 250px;
-    height: 40px;
-    border-radius: 10px ;
-    background:#8e0e1e ;
-    opacity: 0.85;
-    font-size: 25px;
-    color: #fff;
-    border: none;
-}
-header .text{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    color: white;
-    background-color: #8e0e1e;
-    opacity: 0.85;
     text-transform: capitalize;
-    font-weight: bolder;
+    position: relative;
 }
-.content{
+
+main header .intro{
+    background-color: transparent;
+    position: absolute;
+    width: 50%;
+    bottom: 0;
     padding: 50px;
-}
-.content .content1{
-    padding: 15px;
-}
-
-.content .content1 .head{
-    font-weight: bold;
-}
-.content .content1 .text{
-    text-transform: capitalize;
-}
-.image-groups{
-    background: #2222;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
-    width: 94%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
-}
-.image{
-    padding: 20px;
-    border: 2px solid whitesmoke;
-    border-radius: 10px;
-}
-.image img{
-    width: 200px;
-    height: 200px;
-    clip-path: circle(50% at 50% 50%);
-}
-.image:hover{
-    background: #ddd;
-}
-@media (max-width:480px){
-    header .image1{
-        height: 400px;
-        font-size: 25px;
-    }
-    header .image1 p{
-        width: 100%;
-    }
-    header .image1 button{
-        width: 150px;
-        height: 20px;
-        border-radius: 5px;
-        font-size: 15px;
-    }
-    header .text{
-        font-size: 30px;
-    }
-    .content{
-        padding: 20px;
-    }
-    .content .content1{
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    .content .content1 .head{
-        font-weight: bold;
-        font-size: 25px;
-    }
-    .content .content1 .text{
-        text-transform: capitalize;
-    }
-    .content .content1:nth-child(1){
-        border: 1px solid red;
-    }
-    .content .content1:nth-child(2){
-        border: 1px solid blue;
-    }
-    .content .content1:nth-child(3){
-        border: 1px solid pink;
-    }
-    .content .content1:nth-child(4){
-        border: 1px solid purple;
-    }
-    .content .content1:nth-child(5){
-        border: 1px solid orange;
-    }
-    .content .content1:nth-child(6){
-        border: 1px solid orangered;
-    }
-  
+    right: 0;
     
 }
+
+main header .intro a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-shadow: slategray
+}
+
+main .content{
+    background-color: red;
+    padding: 30px;
+    text-align: justify;
+}
+
+.mySlides {display:none;}
