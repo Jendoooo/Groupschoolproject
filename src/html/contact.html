@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="stylesheet" href="../fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.css">
-    <link rel="stylesheet" href="../css/contact.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav.css">
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="../css/contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../img/index/ogunmodedelogo.png">
-    <script src="../js/index.js" defer></script>
-    <title>contact us</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 </head>
 <body>
+
     <section class="header">
         <nav>
             <div class="base">
@@ -46,69 +45,55 @@
             
         </nav> 
     </section>
-    <section class="contact">
-        <div class="content">
-            <h1>contact us</h1>
-            <p>for more enquiries and complains you may send us a message below. <br>your mail would be attended to within the shortest possible time. all enquiries either made through mail or phone would be responded to later than 48 hours from time of reciept of your mail</p>
-        </div>
-
-        <div class="container">
+  
+	<div class="container">
+        <div class="address">
+            <div class="logodiv">
+                <img src="../img/index/ogunmodedelogo.png" alt="">
+            </div>
+            
             <div class="contactinfo">
                 <div class="box" id="one">
                     <div class="icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
                     <div class="text">
                         <h3>Address</h3>
-                        <p>39, ekundayo street papa epe lagos state</p>
+                        <p>39, ekundayo street papa epe lagos </p>
+                       
                     </div>
                 </div>
-                <div class="box" id="2">
+                <div class="box" id="one">
                     <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
                     <div class="text">
                         <h3>Phone</h3>
                         <p>08033778051</p>
+                       
                     </div>
+                   
                 </div>
-                <div class="box" id="3">
+                <div class="box" id="one">
                     <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
                     <div class="text">
                         <h3>Email</h3>
-                        <p>Ogunmodede@gmail.com</p>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="contactform">
-                <form method="POST" data-netlify="true" name="Contact Us Form">
-                    <input type="hidden" name="subject" 
-                    value="Contact Form from ogunmodedeseniorhighschool.netlify.app" />
-                    <h2>SEND MESSAGE</h2>
-                    <div class="inputbox">
-                        <input type="text" name="fullname" required="required">
-                        <span><i class="fa fa-user" ></i> Full Name</span>
-                    </div>
-                    <div class="inputbox">
-                        <input type="text" name="email" required="required">
-                        <span><i class="fa fa-envelope" ></i> Email</span>
-                    </div>
-                    <div class="inputbox">
-                        <input type="tel" name="telephone" required="required">
-                        <span><i class="fa fa-phone" ></i> Phone number</span>
-                    </div>
-                    <div class="inputbox">
-                        <textarea required="required" name="Message to School: "></textarea>
-                        <span>Type your message here.....</span>
-                    </div>
-                    <div class="inputbox">
-                        <input type="submit" name="" value="SEND">
+                        <p>ogunmodede@gmail.com</p>
                        
                     </div>
-                </form>
+                </div>
             </div>
+                
         </div>
-    </section>
-    
-    
-    
+		<div class="contact-box">
+            <form method="POST" data-netlify="true" name="Contact Us Form">
+                <h2>Contact Us</h2>
+                <input type="text" class="field" placeholder="Your Name">
+                <input type="text" class="field" placeholder="Your Email">
+                <input type="text" class="field" placeholder="Phone">
+                <textarea placeholder="Message" class="field"></textarea>
+                <button class="btn" type="submit">Send</button>
+            </form>
+            
+		</div>
+	</div>
+
     <footer id="contactfooter">
         <div class="row">
             <div class="col">
@@ -159,10 +144,10 @@
         <hr>
         <p class="copyright">&copy; 2022 Programmers Club, Ogunmodede Senior College</p>
     </footer>
+ 
     <script src="../js/index.js">
 
     </script>
     <script src="https://kit.fontawesome.com/220eb269e4.js" crossorigin="anonymous"></script>
-
 </body>
 </html>

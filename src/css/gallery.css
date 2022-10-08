@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    height: 250vh;
+    height: 300vh;
 }
 
 main header {
     width: 100%;
-    height: 600px;
-    background:  linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)),url(../img/facilities/ict/ictfrontview.JPG);
+    height: 500px;
+    background:  linear-gradient(rgba(168, 171, 182, 1),rgba(4,9,30,0.5)),url(../img/gallery/newstuff\ \(26\)_11zon.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,12 @@ main header {
     flex-direction: column;
     text-transform: capitalize;
     position: relative;
+   
+   
 }
+
+
+
 
 main header .intro{
     background-color: transparent;
@@ -53,34 +58,47 @@ main .content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5px;
+    
 
     
     
 }
 
 .facilities_image .image img{ 
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     
 }
 .heading{
     font-size: 50px;
     text-transform: capitalize;
     font-weight: bolder;
-    background: red;
+    background-color: #8e0e1e;
     text-align: center;
 }
 .text{
     font-size: xx-large;
     padding: 20px;
 }
-
+.intro{
+    color: white;
+    font-weight: bolder;
+}
+.intro a
+{
+   font-style: normal;
+}
+.intro a:hover
+{
+    font-size: 18px;
+}
 @media (max-width:428px){
     main header {
         width: 100%;
         height: 300px;
-        background:  linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)),url(../img/facilities/ict/ictfrontview.JPG);
+        background:  linear-gradient(rgba(168, 171, 182, 0.),rgba(4,9,30,0.2)),url(../img/facilities/ict/ictfrontview.JPG);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -107,7 +125,7 @@ main .content{
     font-size: 50px;
     text-transform: capitalize;
     font-weight: bolder;
-    background: red;
+    background:  #8e0e1e;;
     text-align: center;
 }
     .text{
@@ -115,6 +133,7 @@ main .content{
         
     }
 }
+
 @media only screen and (max-width:320px){
 
     body{
@@ -125,7 +144,7 @@ main .content{
         font-size: 30px;
         text-transform: capitalize;
         font-weight: bolder;
-        background: red;
+        background:  #8e0e1e;;
         text-align: center;
     }
     
@@ -140,34 +159,14 @@ main .content{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #gallery {
     line-height:0;
     -webkit-column-count:5; 
     -webkit-column-gap:5px; 
     -moz-column-count:5;
     -moz-column-gap:5px;
-    column-count:6;
-    column-gap:5px;
+    column-count:4;
+    column-gap:1px;
  }
 
 #gallery img {
@@ -175,7 +174,10 @@ main .content{
    height: auto ;
    margin-bottom:5px; 
    transition: filter 2s;
+   padding: 15px;
+   
 }
+
 
 @media (max-width: 1200px) {
     #gallery {
@@ -257,83 +259,6 @@ main .content{
 
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
-
-body{
-    margin: 0;
-    padding: 0;
-   
-}
-.animation{
-   background-image: url(../img/gallery/janetpad\ a\ child.jpg);
-   background-position: center;
-   background-clip: border-box;
-   background-size: 90%;
-   background-repeat: no-repeat;
-   width: 100%;
-   height: 100vh;
-   background-origin: border-box;
-   animation: animation infinite 20s ease-in;
-   
-   
-    
-}
-@keyframes animation{
-    0%{
-        background-image: url(../img/gallery/althete.jpg);
-    }
-    10%{
-        background-image: url(../img/gallery/bestschool2021.jpg);
-    }
-    20%{
-        background-image: url(../img/gallery/IMG_20210925_115856.jpg);
-    }
-    30%{
-        background-image: url(../img/gallery/IMG_2499.JPG);
-    }
-    40%{
-        background-image: url(../img/gallery/IMG_2516.JPG);
-    }
-    50%{
-        background-image: url(../img/gallery/IMG_2517.JPG);
-    }
-    60%{
-        background-image: url(../img/gallery/mradekunleprincipal.jpg);
-    }
-    70%{
-        background-image: url(../img/gallery/OGUNMODEDE3.jpg);
-    }
-    80%{
-        background-image: url(../img/gallery/OGUNMODEDE6.jpg);
-    }
-    90%{
-        background-image: url(../img/gallery/OGUNMODEDE\ 1.jpg);
-    }
-    100%{
-        background-image: url(../img/gallery/schoolview.jpg);
-    }
-}
-.heading{
-    font-size: xx-large;
-    background-color: #ba1f32;
-    text-align: center;
-    color: white;
-    height: 50px;
-}
-.image
-{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    align-items: center;
-    justify-content: center;
-
-}
-.images img{
-    height: 200px;
-    width: 200px;
-    padding: 20px;
-    
-}
 
 
 
@@ -346,58 +271,3 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-    width: 100%;
-    min-height: 100vh;   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 8%;
-
-}
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-
-}
-.gallery img{
-    width: 100%;
-    
-} */ */

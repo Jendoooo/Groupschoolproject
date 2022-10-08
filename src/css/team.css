@@ -1,33 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,500;1,600&family=Roboto+Condensed:wght@300;400;700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
 
 
 :root{
     --school-color:#8e0e1e;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
- body{
-    font-family: 'Montserrat', sans-serif;   
-
-    background-color: whitesmoke;
-    margin: auto;
-    background: white;
-    overflow-x: hidden;
-
-
-}
 
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Quicksand', sans-serif; 
 }
 body{
   min-height: 100vh;
@@ -51,10 +35,7 @@ body::before{
   text-align: center;
   text-transform: capitalize;
   padding: 20px;
-}
-.welcome .text{
-  text-transform: capitalize;
-  text-align: center;
+  font-weight: bolder;
 }
 .container{
   max-width: 950px;
@@ -62,6 +43,22 @@ body::before{
   overflow: hidden;
   padding: 80px 0;
   margin: auto;
+}
+.container .welcome{
+  padding: 30px;
+}
+.container .welcome .text{
+  text-transform: none;
+}
+.container .welcome .text .p1,.p2,.p3,.p4,.p5,.p6,.p7{
+  padding: 8px;
+  font-weight: 600;
+  text-align: justify;
+}
+.container .welcome .text .last{
+  text-align: center;
+  font-weight: 600;
+  
 }
 .container .main-card{
   display: flex;
@@ -105,6 +102,7 @@ body::before{
 }
 .main-card .cards .card:hover{
   transform: translateY(-15px);
+  border: 2px solid #8e0e1e;
 }
 .cards .card .content{
   width: 100%;
@@ -119,7 +117,7 @@ body::before{
   width: 130px;
   border-radius: 50%;
   padding: 3px;
-  background: lightgrey;
+  background: #8e0e1e;
   margin-bottom: 14px;
 }
 .card .content .img img{
@@ -133,11 +131,13 @@ body::before{
   font-size: 20px;
   font-weight: 500;
   text-transform: capitalize;
+  font-weight: bolder;
  
 }
 .card .content .job{
   font-size: 15px;
   color: black;
+  font-weight: bold;
 }
 .card .content .media-icons{
   margin-top: 10px;
@@ -160,7 +160,7 @@ body::before{
 }
 .media-icons a:hover{
   color: lightgrey;
-  background-color:grey;
+  background-color:#8e0e1e;
   border-color: lightgrey;
 }
  .container .button{
@@ -177,12 +177,14 @@ body::before{
   margin: 0 4px;
   cursor: pointer;
   transition: all 0.5s ease;
+  background-color: #8e0e1e;
 }
 .button label.active{
   width: 35px;
 }
 #one:checked ~ .button .one{
   width: 35px;
+  
 }
 #one:checked ~ .button .two{
   width: 15px;
@@ -209,13 +211,13 @@ body::before{
   width: 35px;
 }
 #two2:checked ~ .button .three3{
-  width: 35px;
+  width: 15px;
 }
 #three3:checked ~ .button .one1{
   width: 15px;
 }
 #three3:checked ~ .button .two2{
-  width: 35px;
+  width: 15px;
 }
 #three3:checked ~ .button .three3{
   width: 35px;
@@ -224,6 +226,7 @@ body::before{
 
 input[type="radio"]{
   display: none;
+
 }
 @media (max-width: 768px) {
   .main-card .cards .card{
