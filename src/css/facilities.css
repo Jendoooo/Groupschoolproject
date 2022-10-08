@@ -1,14 +1,16 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-  
+body{
+    /* height: 300vh; */
+}
 
 main header {
     width: 100%;
-    height: 600px;
-    background:  linear-gradient(rgba(168, 171, 182, 0.5),rgba(4,9,30,0.5)),url(../img/facilities/ict/ictfrontview.JPG);
+    height: 500px;
+    background:  linear-gradient(rgba(168, 171, 182, 1),rgba(4,9,30,0.5)),url(../img/gallery/newstuff\ \(26\)_11zon.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +23,12 @@ main header {
     flex-direction: column;
     text-transform: capitalize;
     position: relative;
+   
+   
 }
+
+
+
 
 main header .intro{
     background-color: transparent;
@@ -30,6 +37,7 @@ main header .intro{
     bottom: 0;
     padding: 50px;
     right: 0;
+    
     
 }
 
@@ -41,9 +49,225 @@ main header .intro a{
 }
 
 main .content{
-    background-color: red;
-    padding: 30px;
+    background-color: white;
     text-align: justify;
 }
 
-.mySlides {display:none;}
+
+.facilities_image{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+
+    
+    
+}
+
+.facilities_image .image img{ 
+    height: 300px;
+    width: 300px;
+    
+}
+.heading{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    background-color: #8e0e1e;
+    text-align: center;
+}
+.text{
+    font-size: xx-large;
+    padding: 20px;
+}
+.intro{
+    color: white;
+    font-weight: bolder;
+}
+.intro a
+{
+   font-style: normal;
+}
+.intro a:hover
+{
+    font-size: 18px;
+}
+@media (max-width:428px){
+    main header {
+        width: 100%;
+        height: 300px;
+        background:  linear-gradient(rgba(168, 171, 182, 0.),rgba(4,9,30,0.2)),url(../img/facilities/ict/ictfrontview.JPG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        text-align: center;
+        color: white;
+        flex-direction: column;
+        text-transform: capitalize;
+        position: relative;
+    }
+    main header .intro{
+        background-color: transparent;
+        position: absolute;
+        width: 50%;
+        bottom: 0;
+        padding: 1px;
+        right: 0;
+        
+    }
+    .heading{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    background:  #8e0e1e;;
+    text-align: center;
+}
+    .text{
+        font-size: large;
+        
+    }
+}
+
+@media only screen and (max-width:320px){
+
+    body{
+        height: 350vh;
+    }
+    .content .content1 .heading{
+        margin-bottom: 20px;
+        font-size: 30px;
+        text-transform: capitalize;
+        font-weight: bolder;
+        background:  #8e0e1e;;
+        text-align: center;
+    }
+    
+    .content .heading{
+        padding: 50px;
+    }
+    main header{
+        top: 50px;
+    }
+    
+    
+}
+
+
+#gallery {
+    line-height:0;
+    -webkit-column-count:5; 
+    -webkit-column-gap:5px; 
+    -moz-column-count:5;
+    -moz-column-gap:5px;
+    column-count:4;
+    column-gap:1px;
+ }
+
+#gallery img {
+   width: 100%;
+   height: auto ;
+   margin-bottom:5px; 
+   transition: filter 2s;
+   padding: 15px;
+   
+}
+
+
+@media (max-width: 1200px) {
+    #gallery {
+     -moz-column-count:    4;
+     -webkit-column-count: 4;
+     column-count:         4;
+    }
+ }
+
+ @media (max-width: 1000px) {
+    #gallery {
+     -moz-column-count:    3;
+     -webkit-column-count: 3;
+     column-count:         3;
+    }
+ }
+
+
+ @media (max-width: 800px) {
+    #gallery {
+     -moz-column-count:    2;
+     -webkit-column-count: 2;
+     column-count:         2;
+    }
+ }
+
+ @media (max-width: 400px) {
+    #gallery {
+     -moz-column-count:    1;
+     -webkit-column-count: 1;
+     column-count:         1;
+    }
+ }
+ #gallery img:hover {
+    filter:none;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
