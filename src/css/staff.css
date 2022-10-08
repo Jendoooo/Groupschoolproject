@@ -194,7 +194,7 @@ h1{
 
 .restofstaff .staff_members{
     padding: 60px 0;
-    height: 60vh;
+    
     background-color: whitesmoke;
     display: grid;
     width: 90%;
@@ -266,7 +266,7 @@ h1{
 
     
     .container{
-        height: 400vh;
+       
         margin-top: -200px;
         
        
