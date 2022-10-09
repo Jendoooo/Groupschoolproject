@@ -344,19 +344,20 @@ h1{
         
      }
     #first{
-        height: 400vh;
+        /* height: 400vh; */
     } 
     #second{
-        height: 800vh;
+        /* height: 800vh; */
     }
     #third{
-        height: 2000vh;
+        /* height: 2000vh; */
     }
     #four{
-        height: 500vh;
+        /* height: 500vh; */
     }
     .intro .talk{
         top: -42px;
+        
     }
     .container .oga_officers{
         top: 500px;
