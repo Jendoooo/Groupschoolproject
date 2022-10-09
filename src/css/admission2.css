@@ -17,14 +17,14 @@
 
 
 html{
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     
 }
 
 body{
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     width: 100vw;
     overflow-x: hidden;
     justify-content: space-between;

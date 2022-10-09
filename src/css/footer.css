@@ -1,5 +1,6 @@
 
 footer{
+    font-family: "Quicksand",sans-serif;
   
     text-align: center;
     width: 100%;
@@ -199,7 +200,7 @@ footer .underline span{
 /* for normal screen smartphones in potrait orientation */
 @media only screen and (min-width:321px) and (max-width :480px){
     footer{
-        height: 100.9vh;
+        /* height: 100.9vh; */
         bottom: unset;
     }
 
@@ -222,7 +223,7 @@ footer .underline span{
 @media only screen and (min-width:481px) and (max-width:930px){
     footer{
       
-        height:27vh;
+        /* height:27vh; */
         text-align: center;
         width: 100%;
         /* background: linear-gradient(to right, #00093c , #2d0b00); */
@@ -233,7 +234,7 @@ footer .underline span{
         border-top-right-radius: 200px; 
         font-size: 13px;
         line-height: 20px;
-        border: 2px solid var(--school-color);
+        outline: 2px solid var(--school-color);
         /* outline: #8e0e1e; */
         border-bottom: none;
         /* background-color: #8e0e1e; */

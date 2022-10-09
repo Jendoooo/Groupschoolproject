@@ -5,7 +5,7 @@
     padding: 0;
     /* box-sizing: border-box; */
     font-family: sans-serif;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     
 }
 
@@ -262,7 +262,14 @@ h1{
     }
     .intro{
         height:50vh ;
+        text-align: justify;
+    
     }
+
+   .intro h1{
+    text-align: center;
+    width: 100%;
+   }
 
     
     .container{
